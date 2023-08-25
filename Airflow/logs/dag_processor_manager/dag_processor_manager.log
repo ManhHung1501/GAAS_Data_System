@@ -1,0 +1,1471 @@
+[2023-08-25T15:16:42.565+0000] {manager.py:488} INFO - Processing files using up to 2 processes at a time 
+[2023-08-25T15:16:42.567+0000] {manager.py:489} INFO - Process each file at most once every 30 seconds
+[2023-08-25T15:16:42.568+0000] {manager.py:490} INFO - Checking for new files in /home/data-engineer/GAAS_Data_System/Airflow/dags every 300 seconds
+[2023-08-25T15:16:42.570+0000] {manager.py:760} INFO - Searching for files in /home/data-engineer/GAAS_Data_System/Airflow/dags
+[2023-08-25T15:16:42.603+0000] {manager.py:763} INFO - There are 47 files in /home/data-engineer/GAAS_Data_System/Airflow/dags
+[2023-08-25T15:16:42.948+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------------------------------------------------------------------------------------------------  ------  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                                                                                                      0           1  0.22s           2023-08-25T15:16:42
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                                  0           0
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py                                                            0           0
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                                               0           0
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                                   0           0
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_params_trigger_ui.py                                                          0           0
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                                            0           0
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py                                                             0           0
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py                                                                 0           0
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py                                                    0           0
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_sensor_decorator.py                                                           0           0
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py                                                            0           0
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                                     0           0
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_task_group_decorator.py                                                       0           0
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py                                                                0           0
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py                                                              0           0
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_labels.py                                                              0           0
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial.py                                                                           0           0
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping_with_no_taskflow_operators.py                            0           0
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_decorator.py                                                    0           0
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_bash_operator.py                                                              0           0
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_datasets.py                                                                   0           0
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py                                                        0           0
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py                                                     0           0
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py                                                         0           0
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py                                                                    0           0
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py                                                       0           0
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_skip_dag.py                                                                   0           0
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api.py                                    196454  0.12s             0           0
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                                   0           0
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                                    0           0
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py                                                         0           0
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py                                                                    0           0
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcomargs.py                                                                   0           0
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py                                                          0           0
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                                                0           0
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_subdag_operator.py                                                            0           0
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py                                                                    0           0
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                                  0           0
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py                                                   0           0
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py                                                                       0           0
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py                                                                       0           0
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                                   0           0
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py                                                                    0           0
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py                                                            0           0
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/plugins/event_listener.py                                                             0           0
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/subdags/subdag.py                                                                     0           0
+================================================================================
+[2023-08-25T15:17:13.272+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------------------------------------------------------------------------------------------------  ------  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                                                                            196950  0.01s             0           1  0.22s           2023-08-25T15:16:42
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py                                                        0           0  0.08s           2023-08-25T15:16:51
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                                  0           0  0.10s           2023-08-25T15:16:53
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py                                                   0           0  0.09s           2023-08-25T15:16:43
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py                                                                    0           0  1.06s           2023-08-25T15:16:44
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py                                                            0           0  0.10s           2023-08-25T15:16:43
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/plugins/event_listener.py                                                             0           0  0.11s           2023-08-25T15:16:44
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/subdags/subdag.py                                                                     0           0  0.08s           2023-08-25T15:16:44
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                                  1           0  0.48s           2023-08-25T15:16:49
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py                                                            1           0  0.47s           2023-08-25T15:16:49
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                                               1           0  0.56s           2023-08-25T15:16:50
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                                   1           0  0.47s           2023-08-25T15:16:50
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_params_trigger_ui.py                                                          1           0  0.54s           2023-08-25T15:16:50
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                                            1           0  0.54s           2023-08-25T15:16:44
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py                                                             1           0  0.47s           2023-08-25T15:16:44
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py                                                                 1           0  0.48s           2023-08-25T15:16:45
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py                                                    1           0  0.46s           2023-08-25T15:16:45
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_sensor_decorator.py                                                           1           0  0.44s           2023-08-25T15:16:45
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py                                                            1           0  0.42s           2023-08-25T15:16:45
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                                     1           0  0.48s           2023-08-25T15:16:46
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_task_group_decorator.py                                                       1           0  0.49s           2023-08-25T15:16:46
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py                                                                1           0  0.46s           2023-08-25T15:16:50
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py                                                              1           0  0.57s           2023-08-25T15:16:51
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_labels.py                                                              1           0  0.42s           2023-08-25T15:16:51
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial.py                                                                           1           0  0.51s           2023-08-25T15:16:46
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping_with_no_taskflow_operators.py                            1           0  0.46s           2023-08-25T15:16:51
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_decorator.py                                                    1           0  0.58s           2023-08-25T15:16:46
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_bash_operator.py                                                              1           0  0.41s           2023-08-25T15:16:54
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py                                                     1           0  0.55s           2023-08-25T15:16:47
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py                                                         1           0  0.56s           2023-08-25T15:16:52
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py                                                                    1           0  0.46s           2023-08-25T15:16:52
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py                                                       1           0  0.51s           2023-08-25T15:16:52
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_skip_dag.py                                                                   1           0  0.49s           2023-08-25T15:16:47
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api.py                                                              1           0  0.45s           2023-08-25T15:16:43
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                                    1           0  0.44s           2023-08-25T15:16:47
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py                                                         1           0  0.47s           2023-08-25T15:16:47
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py                                                                    1           0  0.51s           2023-08-25T15:16:48
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py                                                          1           0  0.43s           2023-08-25T15:16:53
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                                                1           0  0.47s           2023-08-25T15:16:53
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py                                                                    1           0  0.58s           2023-08-25T15:16:49
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py                                                                       1           0  0.47s           2023-08-25T15:16:49
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py                                                                       1           0  0.56s           2023-08-25T15:16:43
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                                   2           0  0.52s           2023-08-25T15:16:53
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcomargs.py                                                                   2           0  0.66s           2023-08-25T15:16:48
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_subdag_operator.py                                                            3           0  0.65s           2023-08-25T15:16:48
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                                   3           0  0.61s           2023-08-25T15:16:54
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_datasets.py                                                                   6           0  0.97s           2023-08-25T15:16:52
+================================================================================
+[2023-08-25T15:17:44.154+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------------------------------------------------------------------------------------------------  ------  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                                                                            197254  0.02s             0           1  0.09s           2023-08-25T15:17:13
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py                                                        0           0  0.07s           2023-08-25T15:17:21
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                                  0           0  0.09s           2023-08-25T15:17:23
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py                                                   0           0  0.07s           2023-08-25T15:17:13
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py                                                                    0           0  1.04s           2023-08-25T15:17:15
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py                                                            0           0  0.10s           2023-08-25T15:17:14
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/plugins/event_listener.py                                                             0           0  0.11s           2023-08-25T15:17:14
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/subdags/subdag.py                                                                     0           0  0.10s           2023-08-25T15:17:15
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                                  1           0  0.16s           2023-08-25T15:17:19
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py                                                            1           0  0.22s           2023-08-25T15:17:20
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                                               1           0  0.23s           2023-08-25T15:17:20
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                                   1           0  0.21s           2023-08-25T15:17:21
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_params_trigger_ui.py                                                          1           0  0.31s           2023-08-25T15:17:21
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                                            1           0  0.24s           2023-08-25T15:17:15
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py                                                             1           0  0.25s           2023-08-25T15:17:15
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py                                                                 1           0  0.16s           2023-08-25T15:17:15
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py                                                    1           0  0.17s           2023-08-25T15:17:15
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_sensor_decorator.py                                                           1           0  0.22s           2023-08-25T15:17:16
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py                                                            1           0  0.23s           2023-08-25T15:17:16
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                                     1           0  0.20s           2023-08-25T15:17:17
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_task_group_decorator.py                                                       1           0  0.25s           2023-08-25T15:17:17
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py                                                                1           0  0.20s           2023-08-25T15:17:21
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py                                                              1           0  0.32s           2023-08-25T15:17:21
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_labels.py                                                              1           0  0.17s           2023-08-25T15:17:21
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial.py                                                                           1           0  0.21s           2023-08-25T15:17:17
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping_with_no_taskflow_operators.py                            1           0  0.13s           2023-08-25T15:17:21
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_decorator.py                                                    1           0  0.25s           2023-08-25T15:17:17
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_bash_operator.py                                                              1           0  0.18s           2023-08-25T15:17:25
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py                                                     1           0  0.22s           2023-08-25T15:17:17
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py                                                         1           0  0.39s           2023-08-25T15:17:23
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py                                                                    1           0  0.21s           2023-08-25T15:17:23
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py                                                       1           0  0.22s           2023-08-25T15:17:23
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_skip_dag.py                                                                   1           0  0.24s           2023-08-25T15:17:17
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api.py                                    197257  0.01s             1           0  0.14s           2023-08-25T15:17:13
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                                    1           0  0.23s           2023-08-25T15:17:18
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py                                                         1           0  0.17s           2023-08-25T15:17:18
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py                                                                    1           0  0.21s           2023-08-25T15:17:19
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py                                                          1           0  0.24s           2023-08-25T15:17:23
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                                                1           0  0.20s           2023-08-25T15:17:24
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py                                                                    1           0  0.20s           2023-08-25T15:17:19
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py                                                                       1           0  0.15s           2023-08-25T15:17:19
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py                                                                       1           0  0.22s           2023-08-25T15:17:14
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                                   2           0  0.18s           2023-08-25T15:17:23
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcomargs.py                                                                   2           0  0.22s           2023-08-25T15:17:19
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_subdag_operator.py                                                            3           0  0.26s           2023-08-25T15:17:19
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                                   3           0  0.23s           2023-08-25T15:17:24
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_datasets.py                                                                   6           0  0.37s           2023-08-25T15:17:23
+================================================================================
+[2023-08-25T15:18:14.786+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------------------------------------------------------------------------------------------------  ------  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py                                                        0           0  0.08s           2023-08-25T15:17:52
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                                  0           0  0.09s           2023-08-25T15:17:54
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py                         197677  0.03s             0           0  0.11s           2023-08-25T15:17:44
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py                                                                    0           0  0.95s           2023-08-25T15:17:46
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py                                                            0           0  0.10s           2023-08-25T15:17:45
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/plugins/event_listener.py                                                             0           0  0.12s           2023-08-25T15:17:45
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/subdags/subdag.py                                                                     0           0  0.07s           2023-08-25T15:17:45
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                                                                                                      1           0  1.07s           2023-08-25T15:18:12
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                                  1           0  0.15s           2023-08-25T15:17:50
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py                                                            1           0  0.21s           2023-08-25T15:17:51
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                                               1           0  0.25s           2023-08-25T15:17:51
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                                   1           0  0.25s           2023-08-25T15:17:51
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_params_trigger_ui.py                                                          1           0  0.25s           2023-08-25T15:17:51
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                                            1           0  0.28s           2023-08-25T15:17:45
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py                                                             1           0  0.21s           2023-08-25T15:17:46
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py                                                                 1           0  0.22s           2023-08-25T15:17:46
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py                                                    1           0  0.26s           2023-08-25T15:17:46
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_sensor_decorator.py                                                           1           0  0.20s           2023-08-25T15:17:46
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py                                                            1           0  0.18s           2023-08-25T15:17:46
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                                     1           0  0.19s           2023-08-25T15:17:47
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_task_group_decorator.py                                                       1           0  0.23s           2023-08-25T15:17:48
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py                                                                1           0  0.20s           2023-08-25T15:17:51
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py                                                              1           0  0.51s           2023-08-25T15:17:52
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_labels.py                                                              1           0  0.21s           2023-08-25T15:17:51
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial.py                                                                           1           0  0.19s           2023-08-25T15:17:48
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping_with_no_taskflow_operators.py                            1           0  0.24s           2023-08-25T15:17:52
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_decorator.py                                                    1           0  0.24s           2023-08-25T15:17:48
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_bash_operator.py                                                              1           0  0.20s           2023-08-25T15:17:55
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py                                                     1           0  0.23s           2023-08-25T15:17:48
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py                                                         1           0  0.34s           2023-08-25T15:17:53
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py                                                                    1           0  0.20s           2023-08-25T15:17:53
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py                                                       1           0  0.20s           2023-08-25T15:17:53
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_skip_dag.py                                                                   1           0  0.25s           2023-08-25T15:17:48
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api.py                                    197674  0.11s             1           0  0.23s           2023-08-25T15:17:44
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                                    1           0  0.19s           2023-08-25T15:17:48
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py                                                         1           0  0.15s           2023-08-25T15:17:48
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py                                                                    1           0  0.19s           2023-08-25T15:17:49
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py                                                          1           0  0.27s           2023-08-25T15:17:54
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                                                1           0  0.20s           2023-08-25T15:17:55
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py                                                                    1           0  0.22s           2023-08-25T15:17:50
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py                                                                       1           0  0.15s           2023-08-25T15:17:50
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py                                                                       1           0  0.22s           2023-08-25T15:17:45
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                                   2           0  0.19s           2023-08-25T15:17:54
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcomargs.py                                                                   2           0  0.20s           2023-08-25T15:17:49
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_subdag_operator.py                                                            3           0  0.26s           2023-08-25T15:17:50
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                                   3           0  0.23s           2023-08-25T15:17:55
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_datasets.py                                                                   6           0  0.33s           2023-08-25T15:17:53
+================================================================================
+[2023-08-25T15:18:45.243+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------------------------------------------------------------------------------------------------  ------  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py                                                        0           0  0.10s           2023-08-25T15:18:22
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                                  0           0  0.08s           2023-08-25T15:18:24
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py                         198111  0.01s             0           0  0.39s           2023-08-25T15:18:15
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py                                                                    0           0  1.37s           2023-08-25T15:18:18
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py                                                            0           0  0.23s           2023-08-25T15:18:16
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/plugins/event_listener.py                                                             0           0  0.19s           2023-08-25T15:18:16
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/subdags/subdag.py                                                                     0           0  0.09s           2023-08-25T15:18:16
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                                                                                                      1           0  0.74s           2023-08-25T15:18:43
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                                  1           0  0.25s           2023-08-25T15:18:20
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py                                                            1           0  0.29s           2023-08-25T15:18:21
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                                               1           0  0.26s           2023-08-25T15:18:21
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                                   1           0  0.16s           2023-08-25T15:18:22
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_params_trigger_ui.py                                                          1           0  0.28s           2023-08-25T15:18:22
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                                            1           0  0.22s           2023-08-25T15:18:16
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py                                                             1           0  0.44s           2023-08-25T15:18:17
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py                                                                 1           0  0.42s           2023-08-25T15:18:17
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py                                                    1           0  0.39s           2023-08-25T15:18:18
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_sensor_decorator.py                                                           1           0  0.36s           2023-08-25T15:18:18
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py                                                            1           0  0.35s           2023-08-25T15:18:18
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                                     1           0  0.30s           2023-08-25T15:18:18
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_task_group_decorator.py                                                       1           0  0.47s           2023-08-25T15:18:19
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py                                                                1           0  0.22s           2023-08-25T15:18:22
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py                                                              1           0  0.63s           2023-08-25T15:18:23
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_labels.py                                                              1           0  0.25s           2023-08-25T15:18:22
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial.py                                                                           1           0  0.37s           2023-08-25T15:18:19
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping_with_no_taskflow_operators.py                            1           0  0.25s           2023-08-25T15:18:22
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_decorator.py                                                    1           0  0.34s           2023-08-25T15:18:19
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_bash_operator.py                                                              1           0  0.19s           2023-08-25T15:18:26
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py                                                     1           0  0.28s           2023-08-25T15:18:19
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py                                                         1           0  0.31s           2023-08-25T15:18:24
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py                                                                    1           0  0.15s           2023-08-25T15:18:24
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py                                                       1           0  0.14s           2023-08-25T15:18:24
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_skip_dag.py                                                                   1           0  0.26s           2023-08-25T15:18:19
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api.py                                                              1           0  0.65s           2023-08-25T15:18:15
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                                    1           0  0.22s           2023-08-25T15:18:19
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py                                                         1           0  0.22s           2023-08-25T15:18:19
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py                                                                    1           0  0.25s           2023-08-25T15:18:20
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py                                                          1           0  0.23s           2023-08-25T15:18:24
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                                                1           0  0.21s           2023-08-25T15:18:25
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py                                                                    1           0  0.23s           2023-08-25T15:18:20
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py                                                                       1           0  0.24s           2023-08-25T15:18:20
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py                                                                       1           0  0.49s           2023-08-25T15:18:16
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                                   2           0  0.20s           2023-08-25T15:18:24
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcomargs.py                                                                   2           0  0.24s           2023-08-25T15:18:20
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_subdag_operator.py                                                            3           0  0.28s           2023-08-25T15:18:20
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                                   3           0  0.25s           2023-08-25T15:18:25
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_datasets.py                                                                   6           0  0.34s           2023-08-25T15:18:24
+================================================================================
+[2023-08-25T15:19:15.502+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------------------------------------------------------------------------------------------------  ------  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py                                                        0           0  0.27s           2023-08-25T15:18:56
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                                  0           0  0.35s           2023-08-25T15:19:00
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py                         198522  0.01s             0           0  0.17s           2023-08-25T15:18:45
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py                                                                    0           0  1.51s           2023-08-25T15:18:50
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py                                                            0           0  0.08s           2023-08-25T15:18:46
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/plugins/event_listener.py                                                             0           0  0.12s           2023-08-25T15:18:47
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/subdags/subdag.py                                                                     0           0  0.13s           2023-08-25T15:18:47
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                                                                                                      1           0  0.85s           2023-08-25T15:19:15
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                                  1           0  0.67s           2023-08-25T15:18:54
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py                                                            1           0  0.86s           2023-08-25T15:18:54
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                                               1           0  0.58s           2023-08-25T15:18:54
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                                   1           0  0.54s           2023-08-25T15:18:55
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_params_trigger_ui.py                                                          1           0  0.65s           2023-08-25T15:18:55
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                                            1           0  0.34s           2023-08-25T15:18:47
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py                                                             1           0  0.30s           2023-08-25T15:18:48
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py                                                                 1           0  0.20s           2023-08-25T15:18:48
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py                                                    1           0  0.45s           2023-08-25T15:18:49
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_sensor_decorator.py                                                           1           0  0.46s           2023-08-25T15:18:49
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py                                                            1           0  0.35s           2023-08-25T15:18:50
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                                     1           0  0.36s           2023-08-25T15:18:50
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_task_group_decorator.py                                                       1           0  0.43s           2023-08-25T15:18:50
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py                                                                1           0  0.42s           2023-08-25T15:18:55
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py                                                              1           0  0.80s           2023-08-25T15:18:56
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_labels.py                                                              1           0  0.49s           2023-08-25T15:18:56
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial.py                                                                           1           0  0.35s           2023-08-25T15:18:51
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping_with_no_taskflow_operators.py                            1           0  0.61s           2023-08-25T15:18:56
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_decorator.py                                                    1           0  0.43s           2023-08-25T15:18:51
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_bash_operator.py                                                              1           0  0.90s           2023-08-25T15:19:01
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py                                                     1           0  0.48s           2023-08-25T15:18:51
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py                                                         1           0  1.42s           2023-08-25T15:18:58
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py                                                                    1           0  0.85s           2023-08-25T15:18:58
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py                                                       1           0  0.90s           2023-08-25T15:18:59
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_skip_dag.py                                                                   1           0  0.50s           2023-08-25T15:18:51
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api.py                                                              1           0  0.25s           2023-08-25T15:18:45
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                                    1           0  0.48s           2023-08-25T15:18:52
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py                                                         1           0  0.40s           2023-08-25T15:18:52
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py                                                                    1           0  0.49s           2023-08-25T15:18:52
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py                                                          1           0  0.88s           2023-08-25T15:19:00
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                                                1           0  0.94s           2023-08-25T15:19:00
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py                                                                    1           0  0.59s           2023-08-25T15:18:53
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py                                                                       1           0  0.49s           2023-08-25T15:18:53
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py                                                                       1           0  0.20s           2023-08-25T15:18:47
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                                   2           0  0.90s           2023-08-25T15:18:59
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcomargs.py                                                                   2           0  0.42s           2023-08-25T15:18:52
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_subdag_operator.py                                                            3           0  0.68s           2023-08-25T15:18:53
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                                   3           0  0.99s           2023-08-25T15:19:01
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_datasets.py                                                                   6           0  1.31s           2023-08-25T15:18:57
+================================================================================
+[2023-08-25T15:19:45.877+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------------------------------------------------------------------------------------------------  ------  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py                                                        0           0  0.10s           2023-08-25T15:19:26
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                                  0           0  0.48s           2023-08-25T15:19:33
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py                         198884  0.01s             0           0  0.07s           2023-08-25T15:19:15
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py                                                                    0           0  3.33s           2023-08-25T15:19:24
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py                                                            0           0  0.11s           2023-08-25T15:19:16
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/plugins/event_listener.py                                                             0           0  0.11s           2023-08-25T15:19:17
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/subdags/subdag.py                                                                     0           0  0.09s           2023-08-25T15:19:17
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                                                                            198881  0.03s             1           0  0.85s           2023-08-25T15:19:15
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                                  1           0  0.28s           2023-08-25T15:19:26
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py                                                            1           0  0.26s           2023-08-25T15:19:26
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                                               1           0  0.26s           2023-08-25T15:19:26
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                                   1           0  0.21s           2023-08-25T15:19:26
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_params_trigger_ui.py                                                          1           0  0.27s           2023-08-25T15:19:26
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                                            1           0  0.72s           2023-08-25T15:19:19
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py                                                             1           0  0.75s           2023-08-25T15:19:19
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py                                                                 1           0  0.67s           2023-08-25T15:19:20
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py                                                    1           0  0.69s           2023-08-25T15:19:20
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_sensor_decorator.py                                                           1           0  0.59s           2023-08-25T15:19:20
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py                                                            1           0  0.80s           2023-08-25T15:19:21
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                                     1           0  0.73s           2023-08-25T15:19:22
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_task_group_decorator.py                                                       1           0  0.83s           2023-08-25T15:19:23
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py                                                                1           0  0.23s           2023-08-25T15:19:26
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py                                                              1           0  0.72s           2023-08-25T15:19:27
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_labels.py                                                              1           0  0.20s           2023-08-25T15:19:26
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial.py                                                                           1           0  0.50s           2023-08-25T15:19:23
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping_with_no_taskflow_operators.py                            1           0  0.21s           2023-08-25T15:19:27
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_decorator.py                                                    1           0  0.43s           2023-08-25T15:19:24
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_bash_operator.py                                                              1           0  1.47s           2023-08-25T15:19:35
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py                                                     1           0  0.48s           2023-08-25T15:19:24
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py                                                         1           0  1.93s           2023-08-25T15:19:30
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py                                                                    1           0  2.01s           2023-08-25T15:19:31
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py                                                       1           0  1.73s           2023-08-25T15:19:32
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_skip_dag.py                                                                   1           0  0.42s           2023-08-25T15:19:24
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api.py                                                              1           0  0.18s           2023-08-25T15:19:16
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                                    1           0  0.29s           2023-08-25T15:19:24
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py                                                         1           0  0.30s           2023-08-25T15:19:25
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py                                                                    1           0  0.32s           2023-08-25T15:19:25
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py                                                          1           0  1.28s           2023-08-25T15:19:33
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                                                1           0  1.08s           2023-08-25T15:19:34
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py                                                                    1           0  0.31s           2023-08-25T15:19:25
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py                                                                       1           0  0.36s           2023-08-25T15:19:25
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py                                                                       1           0  0.21s           2023-08-25T15:19:17
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                                   2           0  1.29s           2023-08-25T15:19:33
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcomargs.py                                                                   2           0  0.39s           2023-08-25T15:19:25
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_subdag_operator.py                                                            3           0  0.39s           2023-08-25T15:19:25
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                                   3           0  1.78s           2023-08-25T15:19:35
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_datasets.py                                                                   6           0  1.39s           2023-08-25T15:19:29
+================================================================================
+[2023-08-25T15:20:15.902+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py                                                       0           0  0.22s           2023-08-25T15:19:59
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                                 0           0  0.07s           2023-08-25T15:20:04
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py                                                  0           0  0.23s           2023-08-25T15:19:46
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py                                                                   0           0  1.96s           2023-08-25T15:19:56
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py                                                           0           0  0.09s           2023-08-25T15:19:46
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/plugins/event_listener.py                                                            0           0  0.09s           2023-08-25T15:19:48
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/subdags/subdag.py                                                                    0           0  0.11s           2023-08-25T15:19:48
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                                                                                                     1           0  0.99s           2023-08-25T15:19:46
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                                 1           0  0.40s           2023-08-25T15:19:57
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py                                                           1           0  0.37s           2023-08-25T15:19:57
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                                              1           0  0.37s           2023-08-25T15:19:58
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                                  1           0  0.35s           2023-08-25T15:19:58
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_params_trigger_ui.py                                                         1           0  0.41s           2023-08-25T15:19:58
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                                           1           0  0.25s           2023-08-25T15:19:50
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py                                                            1           0  0.22s           2023-08-25T15:19:50
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py                                                                1           0  0.15s           2023-08-25T15:19:50
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py                                                   1           0  0.31s           2023-08-25T15:19:51
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_sensor_decorator.py                                                          1           0  0.26s           2023-08-25T15:19:51
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py                                                           1           0  0.18s           2023-08-25T15:19:51
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                                    1           0  0.21s           2023-08-25T15:19:52
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_task_group_decorator.py                                                      1           0  0.39s           2023-08-25T15:19:54
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py                                                               1           0  0.38s           2023-08-25T15:19:58
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py                                                             1           0  1.20s           2023-08-25T15:19:59
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_labels.py                                                             1           0  0.37s           2023-08-25T15:19:58
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial.py                                                                          1           0  0.48s           2023-08-25T15:19:54
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping_with_no_taskflow_operators.py                           1           0  0.35s           2023-08-25T15:19:59
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_decorator.py                                                   1           0  0.61s           2023-08-25T15:19:55
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_bash_operator.py                                                             1           0  0.33s           2023-08-25T15:20:06
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py                                                    1           0  0.44s           2023-08-25T15:19:55
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py                                                        1           0  0.28s           2023-08-25T15:20:01
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py                                                                   1           0  0.22s           2023-08-25T15:20:02
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py                                                      1           0  0.21s           2023-08-25T15:20:02
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_skip_dag.py                                                                  1           0  0.39s           2023-08-25T15:19:55
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api.py                                                             1           0  0.16s           2023-08-25T15:19:46
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                                   1           0  0.44s           2023-08-25T15:19:56
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py                                                        1           0  0.26s           2023-08-25T15:19:56
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py                                                                   1           0  0.31s           2023-08-25T15:19:56
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py                                                         1           0  0.21s           2023-08-25T15:20:04
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                                               1           0  0.23s           2023-08-25T15:20:04
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py                                                                   1           0  0.36s           2023-08-25T15:19:57
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py                                                                      1           0  0.29s           2023-08-25T15:19:57
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py                                                                      1           0  0.20s           2023-08-25T15:19:48
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                                  2           0  0.14s           2023-08-25T15:20:03
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcomargs.py                                                                  2           0  0.30s           2023-08-25T15:19:56
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_subdag_operator.py                                                           3           0  0.37s           2023-08-25T15:19:57
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                                  3           0  0.31s           2023-08-25T15:20:06
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_datasets.py                                                                  6           0  0.35s           2023-08-25T15:19:59
+================================================================================
+[2023-08-25T15:20:46.102+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py                                                       0           0  0.12s           2023-08-25T15:20:29
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                                 0           0  0.07s           2023-08-25T15:20:34
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py                                                  0           0  0.13s           2023-08-25T15:20:17
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py                                                                   0           0  1.25s           2023-08-25T15:20:28
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py                                                           0           0  0.17s           2023-08-25T15:20:17
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/plugins/event_listener.py                                                            0           0  0.10s           2023-08-25T15:20:18
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/subdags/subdag.py                                                                    0           0  0.10s           2023-08-25T15:20:18
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                                                                                                     1           0  1.06s           2023-08-25T15:20:17
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                                 1           0  0.33s           2023-08-25T15:20:29
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py                                                           1           0  0.25s           2023-08-25T15:20:29
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                                              1           0  0.24s           2023-08-25T15:20:29
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                                  1           0  0.25s           2023-08-25T15:20:29
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_params_trigger_ui.py                                                         1           0  0.32s           2023-08-25T15:20:29
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                                           1           0  0.26s           2023-08-25T15:20:21
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py                                                            1           0  0.26s           2023-08-25T15:20:21
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py                                                                1           0  0.19s           2023-08-25T15:20:21
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py                                                   1           0  0.28s           2023-08-25T15:20:22
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_sensor_decorator.py                                                          1           0  0.22s           2023-08-25T15:20:22
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py                                                           1           0  0.17s           2023-08-25T15:20:22
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                                    1           0  0.16s           2023-08-25T15:20:23
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_task_group_decorator.py                                                      1           0  0.24s           2023-08-25T15:20:24
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py                                                               1           0  0.24s           2023-08-25T15:20:29
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py                                                             1           0  0.74s           2023-08-25T15:20:30
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_labels.py                                                             1           0  0.25s           2023-08-25T15:20:29
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial.py                                                                          1           0  0.24s           2023-08-25T15:20:24
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping_with_no_taskflow_operators.py                           1           0  0.26s           2023-08-25T15:20:29
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_decorator.py                                                   1           0  0.29s           2023-08-25T15:20:26
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_bash_operator.py                                                             1           0  0.16s           2023-08-25T15:20:37
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py                                                    1           0  0.28s           2023-08-25T15:20:26
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py                                                        1           0  0.21s           2023-08-25T15:20:31
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py                                                                   1           0  0.15s           2023-08-25T15:20:32
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py                                                      1           0  0.15s           2023-08-25T15:20:32
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_skip_dag.py                                                                  1           0  0.21s           2023-08-25T15:20:26
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api.py                                                             1           0  0.30s           2023-08-25T15:20:17
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                                   1           0  0.28s           2023-08-25T15:20:27
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py                                                        1           0  0.30s           2023-08-25T15:20:27
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py                                                                   1           0  0.25s           2023-08-25T15:20:27
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py                                                         1           0  0.21s           2023-08-25T15:20:34
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                                               1           0  0.21s           2023-08-25T15:20:34
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py                                                                   1           0  0.29s           2023-08-25T15:20:28
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py                                                                      1           0  0.29s           2023-08-25T15:20:28
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py                                                                      1           0  0.20s           2023-08-25T15:20:18
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                                  2           0  0.15s           2023-08-25T15:20:33
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcomargs.py                                                                  2           0  0.24s           2023-08-25T15:20:28
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_subdag_operator.py                                                           3           0  0.31s           2023-08-25T15:20:28
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                                  3           0  0.17s           2023-08-25T15:20:37
+/home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_datasets.py                                                                  6           0  0.32s           2023-08-25T15:20:30
+================================================================================
+[2023-08-25T15:20:53.681+0000] {manager.py:470} INFO - Exiting gracefully upon receiving signal 15
+[2023-08-25T15:21:11.398+0000] {manager.py:488} INFO - Processing files using up to 2 processes at a time 
+[2023-08-25T15:21:11.401+0000] {manager.py:489} INFO - Process each file at most once every 30 seconds
+[2023-08-25T15:21:11.402+0000] {manager.py:490} INFO - Checking for new files in /home/data-engineer/GAAS_Data_System/Airflow/dags every 300 seconds
+[2023-08-25T15:21:11.403+0000] {manager.py:760} INFO - Searching for files in /home/data-engineer/GAAS_Data_System/Airflow/dags
+[2023-08-25T15:21:11.407+0000] {manager.py:763} INFO - There are 1 files in /home/data-engineer/GAAS_Data_System/Airflow/dags
+[2023-08-25T15:21:11.703+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------  ------  ---------  --------  ----------  --------------  ----------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py  200285  0.14s             0           0
+================================================================================
+[2023-08-25T15:21:41.844+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                           1           0  1.24s           2023-08-25T15:21:12
+================================================================================
+[2023-08-25T15:22:11.881+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                           1           0  0.87s           2023-08-25T15:21:43
+================================================================================
+[2023-08-25T15:22:42.210+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                           1           0  0.85s           2023-08-25T15:22:14
+================================================================================
+[2023-08-25T15:23:12.801+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                           1           0  0.77s           2023-08-25T15:23:08
+================================================================================
+[2023-08-25T15:23:43.014+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                           1           0  1.01s           2023-08-25T15:23:24
+================================================================================
+[2023-08-25T15:24:13.435+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                           1           0  1.68s           2023-08-25T15:23:56
+================================================================================
+[2023-08-25T15:24:44.048+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                           1           0  1.40s           2023-08-25T15:24:28
+================================================================================
+[2023-08-25T15:25:14.213+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                           1           0  0.78s           2023-08-25T15:24:59
+================================================================================
+[2023-08-25T15:25:44.322+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                           1           0  0.94s           2023-08-25T15:25:30
+================================================================================
+[2023-08-25T15:26:11.551+0000] {manager.py:760} INFO - Searching for files in /home/data-engineer/GAAS_Data_System/Airflow/dags
+[2023-08-25T15:26:11.555+0000] {manager.py:763} INFO - There are 1 files in /home/data-engineer/GAAS_Data_System/Airflow/dags
+[2023-08-25T15:26:14.594+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                           1           0  0.74s           2023-08-25T15:26:01
+================================================================================
+[2023-08-25T15:26:44.730+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                           1           0  0.75s           2023-08-25T15:26:32
+================================================================================
+[2023-08-25T15:27:14.888+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                           1           0  0.84s           2023-08-25T15:27:03
+================================================================================
+[2023-08-25T15:27:44.955+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                           1           0  0.74s           2023-08-25T15:27:33
+================================================================================
+[2023-08-25T15:28:15.351+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                           1           0  0.73s           2023-08-25T15:28:04
+================================================================================
+[2023-08-25T15:28:45.497+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                           1           0  0.74s           2023-08-25T15:28:35
+================================================================================
+[2023-08-25T15:29:15.574+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                           1           0  0.73s           2023-08-25T15:29:06
+================================================================================
+[2023-08-25T15:29:45.798+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                           1           0  1.12s           2023-08-25T15:29:37
+================================================================================
+[2023-08-25T15:30:15.854+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                           1           0  0.89s           2023-08-25T15:30:08
+================================================================================
+[2023-08-25T15:30:46.221+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                           1           0  1.63s           2023-08-25T15:30:40
+================================================================================
+[2023-08-25T15:31:11.835+0000] {manager.py:760} INFO - Searching for files in /home/data-engineer/GAAS_Data_System/Airflow/dags
+[2023-08-25T15:31:11.843+0000] {manager.py:763} INFO - There are 1 files in /home/data-engineer/GAAS_Data_System/Airflow/dags
+[2023-08-25T15:31:16.387+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                           1           0  2.65s           2023-08-25T15:31:13
+================================================================================
+[2023-08-25T15:31:46.707+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------  ------  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py  206449  3.09s             1           0  2.65s           2023-08-25T15:31:13
+================================================================================
+[2023-08-25T15:32:16.995+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                           1           0  3.42s           2023-08-25T15:32:05
+================================================================================
+[2023-08-25T15:32:47.599+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                           1           0  3.50s           2023-08-25T15:32:20
+================================================================================
+[2023-08-25T15:33:17.768+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                           1           0  1.99s           2023-08-25T15:32:53
+================================================================================
+[2023-08-25T15:33:47.973+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                           1           0  1.68s           2023-08-25T15:33:24
+================================================================================
+[2023-08-25T15:34:18.211+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                           1           0  2.04s           2023-08-25T15:33:57
+================================================================================
+[2023-08-25T15:34:48.451+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                           1           0  2.08s           2023-08-25T15:34:29
+================================================================================
+[2023-08-25T15:35:18.695+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                           1           0  2.63s           2023-08-25T15:35:02
+================================================================================
+[2023-08-25T15:35:48.851+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                           1           0  2.04s           2023-08-25T15:35:34
+================================================================================
+[2023-08-25T15:36:11.978+0000] {manager.py:760} INFO - Searching for files in /home/data-engineer/GAAS_Data_System/Airflow/dags
+[2023-08-25T15:36:11.986+0000] {manager.py:763} INFO - There are 1 files in /home/data-engineer/GAAS_Data_System/Airflow/dags
+[2023-08-25T15:36:19.108+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                           1           0  1.90s           2023-08-25T15:36:06
+================================================================================
+[2023-08-25T15:36:49.121+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                           1           0  2.48s           2023-08-25T15:36:39
+================================================================================
+[2023-08-25T15:37:19.296+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                           1           0  1.24s           2023-08-25T15:37:10
+================================================================================
+[2023-08-25T15:37:49.684+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                           1           0  1.40s           2023-08-25T15:37:42
+================================================================================
+[2023-08-25T15:38:19.849+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                           1           0  0.73s           2023-08-25T15:38:12
+================================================================================
+[2023-08-25T15:38:50.061+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                           1           0  0.69s           2023-08-25T15:38:43
+================================================================================
+[2023-08-25T15:39:20.220+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                           1           0  0.78s           2023-08-25T15:39:14
+================================================================================
+[2023-08-25T15:39:50.354+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                           1           0  0.57s           2023-08-25T15:39:45
+================================================================================
+[2023-08-25T15:40:20.596+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                           1           0  0.70s           2023-08-25T15:40:16
+================================================================================
+[2023-08-25T15:40:50.741+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                           1           0  0.57s           2023-08-25T15:40:46
+================================================================================
+[2023-08-25T15:41:11.984+0000] {manager.py:760} INFO - Searching for files in /home/data-engineer/GAAS_Data_System/Airflow/dags
+[2023-08-25T15:41:11.987+0000] {manager.py:763} INFO - There are 1 files in /home/data-engineer/GAAS_Data_System/Airflow/dags
+[2023-08-25T15:41:21.056+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                           1           0  0.56s           2023-08-25T15:41:17
+================================================================================
+[2023-08-25T15:41:51.193+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                           1           0  0.58s           2023-08-25T15:41:48
+================================================================================
+[2023-08-25T15:42:21.464+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                           1           0  0.54s           2023-08-25T15:42:18
+================================================================================
+[2023-08-25T15:42:51.602+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                           1           0  0.56s           2023-08-25T15:42:49
+================================================================================
+[2023-08-25T15:43:21.825+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                           1           0  0.60s           2023-08-25T15:43:20
+================================================================================
+[2023-08-25T15:43:51.957+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                           1           0  0.62s           2023-08-25T15:43:51
+================================================================================
+[2023-08-25T15:44:21.290+0000] {manager.py:470} INFO - Exiting gracefully upon receiving signal 15
+[2023-08-25T15:44:21.299+0000] {manager.py:470} INFO - Exiting gracefully upon receiving signal 15
+[2023-08-25T15:44:21.866+0000] {manager.py:470} INFO - Exiting gracefully upon receiving signal 15
+[2023-08-25T17:43:22.098+0000] {manager.py:488} INFO - Processing files using up to 2 processes at a time 
+[2023-08-25T17:43:22.104+0000] {manager.py:489} INFO - Process each file at most once every 30 seconds
+[2023-08-25T17:43:22.104+0000] {manager.py:490} INFO - Checking for new files in /home/data-engineer/GAAS_Data_System/Airflow/dags every 300 seconds
+[2023-08-25T17:43:22.105+0000] {manager.py:760} INFO - Searching for files in /home/data-engineer/GAAS_Data_System/Airflow/dags
+[2023-08-25T17:43:22.109+0000] {manager.py:763} INFO - There are 2 files in /home/data-engineer/GAAS_Data_System/Airflow/dags
+[2023-08-25T17:43:22.306+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  ------  ---------  --------  ----------  --------------  ----------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py         213867  0.12s             0           0
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py  213870  0.10s             0           0
+================================================================================
+[2023-08-25T17:43:52.444+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  1.55s           2023-08-25T17:43:23
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  1.53s           2023-08-25T17:43:23
+================================================================================
+[2023-08-25T17:44:23.150+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  9.34s           2023-08-25T17:44:03
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  8.52s           2023-08-25T17:44:02
+================================================================================
+[2023-08-25T17:44:53.643+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  7.64s           2023-08-25T17:44:40
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  6.71s           2023-08-25T17:44:40
+================================================================================
+[2023-08-25T17:54:34.300+0000] {manager.py:760} INFO - Searching for files in /home/data-engineer/GAAS_Data_System/Airflow/dags
+[2023-08-25T17:54:34.492+0000] {manager.py:763} INFO - There are 2 files in /home/data-engineer/GAAS_Data_System/Airflow/dags
+[2023-08-25T17:54:35.865+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  ------  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py         217223  0.48s             1           0  7.64s           2023-08-25T17:44:40
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py  217260  0.08s             1           0  6.71s           2023-08-25T17:44:40
+================================================================================
+[2023-08-25T17:55:05.985+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  5.48s           2023-08-25T17:54:40
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  5.10s           2023-08-25T17:54:40
+================================================================================
+[2023-08-25T17:55:36.369+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  4.22s           2023-08-25T17:55:15
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  4.37s           2023-08-25T17:55:15
+================================================================================
+[2023-08-25T17:56:06.752+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  4.16s           2023-08-25T17:55:49
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  4.18s           2023-08-25T17:55:49
+================================================================================
+[2023-08-25T17:56:37.230+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  4.28s           2023-08-25T17:56:24
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  4.13s           2023-08-25T17:56:24
+================================================================================
+[2023-08-25T17:57:07.466+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  1.02s           2023-08-25T17:56:55
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  1.04s           2023-08-25T17:56:55
+================================================================================
+[2023-08-25T17:57:37.794+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  1.18s           2023-08-25T17:57:26
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  1.18s           2023-08-25T17:57:26
+================================================================================
+[2023-08-25T17:58:07.950+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  1.00s           2023-08-25T17:57:57
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  1.01s           2023-08-25T17:57:57
+================================================================================
+[2023-08-25T17:58:38.082+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  0.98s           2023-08-25T17:58:29
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  0.98s           2023-08-25T17:58:29
+================================================================================
+[2023-08-25T17:59:08.227+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  0.99s           2023-08-25T17:59:00
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  1.02s           2023-08-25T17:59:00
+================================================================================
+[2023-08-25T17:59:34.353+0000] {manager.py:760} INFO - Searching for files in /home/data-engineer/GAAS_Data_System/Airflow/dags
+[2023-08-25T17:59:34.355+0000] {manager.py:763} INFO - There are 2 files in /home/data-engineer/GAAS_Data_System/Airflow/dags
+[2023-08-25T17:59:38.396+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  0.98s           2023-08-25T17:59:31
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  1.00s           2023-08-25T17:59:31
+================================================================================
+[2023-08-25T18:00:08.600+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  1.05s           2023-08-25T18:00:02
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  1.06s           2023-08-25T18:00:02
+================================================================================
+[2023-08-25T18:00:38.907+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  1.14s           2023-08-25T18:00:33
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  1.16s           2023-08-25T18:00:33
+================================================================================
+[2023-08-25T18:01:09.185+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  1.12s           2023-08-25T18:01:05
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  1.12s           2023-08-25T18:01:05
+================================================================================
+[2023-08-25T18:01:39.416+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  1.03s           2023-08-25T18:01:36
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  1.07s           2023-08-25T18:01:36
+================================================================================
+[2023-08-25T18:02:09.685+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  1.12s           2023-08-25T18:02:07
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  1.13s           2023-08-25T18:02:07
+================================================================================
+[2023-08-25T18:02:39.840+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  1.00s           2023-08-25T18:02:38
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  1.00s           2023-08-25T18:02:38
+================================================================================
+[2023-08-25T18:03:10.025+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  ------  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py         217548  1.05s             1           0  1.00s           2023-08-25T18:02:38
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py  217549  1.04s             1           0  1.00s           2023-08-25T18:02:38
+================================================================================
+[2023-08-25T18:03:40.282+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  ------  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py         217555  0.02s             1           0  1.13s           2023-08-25T18:03:10
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py  217556  0.01s             1           0  1.14s           2023-08-25T18:03:10
+================================================================================
+[2023-08-25T18:04:10.405+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  1.00s           2023-08-25T18:03:41
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  1.00s           2023-08-25T18:03:41
+================================================================================
+[2023-08-25T18:04:34.524+0000] {manager.py:760} INFO - Searching for files in /home/data-engineer/GAAS_Data_System/Airflow/dags
+[2023-08-25T18:04:34.527+0000] {manager.py:763} INFO - There are 2 files in /home/data-engineer/GAAS_Data_System/Airflow/dags
+[2023-08-25T18:04:40.583+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  0.99s           2023-08-25T18:04:12
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  0.99s           2023-08-25T18:04:12
+================================================================================
+[2023-08-25T18:05:10.979+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  2.24s           2023-08-25T18:04:44
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  2.18s           2023-08-25T18:04:44
+================================================================================
+[2023-08-25T18:05:41.492+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  1.35s           2023-08-25T18:05:16
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  1.36s           2023-08-25T18:05:16
+================================================================================
+[2023-08-25T18:06:11.639+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  1.00s           2023-08-25T18:05:47
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  1.00s           2023-08-25T18:05:47
+================================================================================
+[2023-08-25T18:06:41.841+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  1.05s           2023-08-25T18:06:18
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  1.07s           2023-08-25T18:06:18
+================================================================================
+[2023-08-25T18:07:12.119+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  1.16s           2023-08-25T18:06:50
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  1.11s           2023-08-25T18:06:50
+================================================================================
+[2023-08-25T18:07:42.527+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  1.12s           2023-08-25T18:07:21
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  1.15s           2023-08-25T18:07:21
+================================================================================
+[2023-08-25T18:08:12.701+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  0.75s           2023-08-25T18:07:52
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  0.74s           2023-08-25T18:07:52
+================================================================================
+[2023-08-25T18:08:42.845+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  0.77s           2023-08-25T18:08:23
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  0.76s           2023-08-25T18:08:23
+================================================================================
+[2023-08-25T18:09:13.243+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  0.78s           2023-08-25T18:08:54
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  0.78s           2023-08-25T18:08:54
+================================================================================
+[2023-08-25T18:09:35.106+0000] {manager.py:760} INFO - Searching for files in /home/data-engineer/GAAS_Data_System/Airflow/dags
+[2023-08-25T18:09:35.110+0000] {manager.py:763} INFO - There are 2 files in /home/data-engineer/GAAS_Data_System/Airflow/dags
+[2023-08-25T18:09:44.184+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  0.76s           2023-08-25T18:09:25
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  0.77s           2023-08-25T18:09:25
+================================================================================
+[2023-08-25T18:10:14.189+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  0.86s           2023-08-25T18:09:56
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  0.86s           2023-08-25T18:09:56
+================================================================================
+[2023-08-25T18:10:44.222+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  0.87s           2023-08-25T18:10:27
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  0.87s           2023-08-25T18:10:27
+================================================================================
+[2023-08-25T18:11:15.140+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  0.77s           2023-08-25T18:10:58
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  0.77s           2023-08-25T18:10:58
+================================================================================
+[2023-08-25T18:11:46.067+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  0.77s           2023-08-25T18:11:28
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  0.77s           2023-08-25T18:11:28
+================================================================================
+[2023-08-25T18:12:16.984+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  0.76s           2023-08-25T18:11:59
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  0.77s           2023-08-25T18:11:59
+================================================================================
+[2023-08-25T18:12:47.966+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  0.84s           2023-08-25T18:12:30
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  0.85s           2023-08-25T18:12:30
+================================================================================
+[2023-08-25T18:13:18.902+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  0.78s           2023-08-25T18:13:01
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  0.78s           2023-08-25T18:13:01
+================================================================================
+[2023-08-25T18:13:49.832+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  0.78s           2023-08-25T18:13:32
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  0.78s           2023-08-25T18:13:32
+================================================================================
+[2023-08-25T18:14:20.721+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  0.75s           2023-08-25T18:14:03
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  0.76s           2023-08-25T18:14:03
+================================================================================
+[2023-08-25T18:14:35.569+0000] {manager.py:760} INFO - Searching for files in /home/data-engineer/GAAS_Data_System/Airflow/dags
+[2023-08-25T18:14:35.571+0000] {manager.py:763} INFO - There are 2 files in /home/data-engineer/GAAS_Data_System/Airflow/dags
+[2023-08-25T18:14:51.669+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  0.77s           2023-08-25T18:14:34
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  0.76s           2023-08-25T18:14:34
+================================================================================
+[2023-08-25T18:15:21.774+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  0.94s           2023-08-25T18:15:05
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  0.97s           2023-08-25T18:15:05
+================================================================================
+[2023-08-25T18:15:51.856+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  0.94s           2023-08-25T18:15:36
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  0.91s           2023-08-25T18:15:36
+================================================================================
+[2023-08-25T18:16:22.822+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  0.82s           2023-08-25T18:16:07
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  0.81s           2023-08-25T18:16:07
+================================================================================
+[2023-08-25T18:16:53.743+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  0.78s           2023-08-25T18:16:38
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  0.78s           2023-08-25T18:16:38
+================================================================================
+[2023-08-25T18:17:24.670+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  0.78s           2023-08-25T18:17:09
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  0.77s           2023-08-25T18:17:09
+================================================================================
+[2023-08-25T18:17:55.587+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  0.77s           2023-08-25T18:17:40
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  0.76s           2023-08-25T18:17:40
+================================================================================
+[2023-08-25T18:18:26.487+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  0.76s           2023-08-25T18:18:11
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  0.79s           2023-08-25T18:18:11
+================================================================================
+[2023-08-25T18:18:57.404+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  0.77s           2023-08-25T18:18:42
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  0.77s           2023-08-25T18:18:42
+================================================================================
+[2023-08-25T18:19:27.596+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  0.81s           2023-08-25T18:19:13
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  0.79s           2023-08-25T18:19:13
+================================================================================
+[2023-08-25T18:19:35.628+0000] {manager.py:760} INFO - Searching for files in /home/data-engineer/GAAS_Data_System/Airflow/dags
+[2023-08-25T18:19:35.630+0000] {manager.py:763} INFO - There are 2 files in /home/data-engineer/GAAS_Data_System/Airflow/dags
+[2023-08-25T18:19:58.241+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  0.76s           2023-08-25T18:19:44
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  0.77s           2023-08-25T18:19:44
+================================================================================
+[2023-08-25T18:20:29.222+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  0.82s           2023-08-25T18:20:15
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  0.83s           2023-08-25T18:20:15
+================================================================================
+[2023-08-25T18:20:59.345+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  0.98s           2023-08-25T18:20:46
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  0.78s           2023-08-25T18:20:46
+================================================================================
+[2023-08-25T18:21:29.397+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  0.91s           2023-08-25T18:21:17
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  0.94s           2023-08-25T18:21:17
+================================================================================
+[2023-08-25T18:21:59.562+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  1.11s           2023-08-25T18:21:48
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  1.16s           2023-08-25T18:21:48
+================================================================================
+[2023-08-25T18:22:30.500+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  0.79s           2023-08-25T18:22:19
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  0.78s           2023-08-25T18:22:19
+================================================================================
+[2023-08-25T18:23:00.613+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  0.77s           2023-08-25T18:22:50
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  0.94s           2023-08-25T18:22:50
+================================================================================
+[2023-08-25T18:23:30.951+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  1.60s           2023-08-25T18:23:22
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  1.19s           2023-08-25T18:23:21
+================================================================================
+[2023-08-25T18:24:00.955+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  0.96s           2023-08-25T18:23:53
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  0.84s           2023-08-25T18:23:52
+================================================================================
+[2023-08-25T18:24:31.081+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  0.94s           2023-08-25T18:24:24
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  0.97s           2023-08-25T18:24:24
+================================================================================
+[2023-08-25T18:24:36.103+0000] {manager.py:760} INFO - Searching for files in /home/data-engineer/GAAS_Data_System/Airflow/dags
+[2023-08-25T18:24:36.105+0000] {manager.py:763} INFO - There are 2 files in /home/data-engineer/GAAS_Data_System/Airflow/dags

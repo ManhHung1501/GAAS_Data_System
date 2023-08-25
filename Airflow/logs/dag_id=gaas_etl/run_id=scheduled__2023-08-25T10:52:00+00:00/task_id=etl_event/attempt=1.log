@@ -1,0 +1,3 @@
+[2023-08-25T17:44:59.572+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: gaas_etl.etl_event scheduled__2023-08-25T10:52:00+00:00 [queued]>
+[2023-08-25T17:44:59.742+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: gaas_etl.etl_event scheduled__2023-08-25T10:52:00+00:00 [queued]>
+[2023-08-25T17:44:59.751+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1

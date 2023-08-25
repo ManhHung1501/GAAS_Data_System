@@ -1,0 +1,60 @@
+[2023-08-25T15:16:50.817+0000] {processor.py:157} INFO - Started process (PID=196766) to work on /home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py
+[2023-08-25T15:16:50.819+0000] {processor.py:829} INFO - Processing file /home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2023-08-25T15:16:50.820+0000] {logging_mixin.py:151} INFO - [2023-08-25T15:16:50.820+0000] {dagbag.py:539} INFO - Filling up the DagBag from /home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py
+[2023-08-25T15:16:50.984+0000] {processor.py:839} INFO - DAG(s) dict_keys(['example_dag_decorator']) retrieved from /home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py
+[2023-08-25T15:16:51.190+0000] {logging_mixin.py:151} INFO - [2023-08-25T15:16:51.189+0000] {manager.py:501} INFO - Created Permission View: can delete on DAG:example_dag_decorator
+[2023-08-25T15:16:51.221+0000] {logging_mixin.py:151} INFO - [2023-08-25T15:16:51.221+0000] {manager.py:501} INFO - Created Permission View: can edit on DAG:example_dag_decorator
+[2023-08-25T15:16:51.238+0000] {logging_mixin.py:151} INFO - [2023-08-25T15:16:51.237+0000] {manager.py:501} INFO - Created Permission View: can read on DAG:example_dag_decorator
+[2023-08-25T15:16:51.267+0000] {logging_mixin.py:151} INFO - [2023-08-25T15:16:51.267+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-25T15:16:51.291+0000] {logging_mixin.py:151} INFO - [2023-08-25T15:16:51.291+0000] {dag.py:2929} INFO - Creating ORM DAG for example_dag_decorator
+[2023-08-25T15:16:51.292+0000] {logging_mixin.py:151} INFO - [2023-08-25T15:16:51.292+0000] {dag.py:3677} INFO - Setting next_dagrun for example_dag_decorator to None, run_after=None
+[2023-08-25T15:16:51.343+0000] {processor.py:179} INFO - Processing /home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py took 0.534 seconds
+[2023-08-25T15:17:21.474+0000] {processor.py:157} INFO - Started process (PID=197137) to work on /home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py
+[2023-08-25T15:17:21.475+0000] {processor.py:829} INFO - Processing file /home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2023-08-25T15:17:21.476+0000] {logging_mixin.py:151} INFO - [2023-08-25T15:17:21.476+0000] {dagbag.py:539} INFO - Filling up the DagBag from /home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py
+[2023-08-25T15:17:21.565+0000] {processor.py:839} INFO - DAG(s) dict_keys(['example_dag_decorator']) retrieved from /home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py
+[2023-08-25T15:17:21.711+0000] {logging_mixin.py:151} INFO - [2023-08-25T15:17:21.711+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-25T15:17:21.724+0000] {logging_mixin.py:151} INFO - [2023-08-25T15:17:21.724+0000] {dag.py:3677} INFO - Setting next_dagrun for example_dag_decorator to None, run_after=None
+[2023-08-25T15:17:21.760+0000] {processor.py:179} INFO - Processing /home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py took 0.291 seconds
+[2023-08-25T15:17:51.936+0000] {processor.py:157} INFO - Started process (PID=197441) to work on /home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py
+[2023-08-25T15:17:51.938+0000] {processor.py:829} INFO - Processing file /home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2023-08-25T15:17:51.940+0000] {logging_mixin.py:151} INFO - [2023-08-25T15:17:51.939+0000] {dagbag.py:539} INFO - Filling up the DagBag from /home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py
+[2023-08-25T15:17:52.104+0000] {processor.py:839} INFO - DAG(s) dict_keys(['example_dag_decorator']) retrieved from /home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py
+[2023-08-25T15:17:52.348+0000] {logging_mixin.py:151} INFO - [2023-08-25T15:17:52.347+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-25T15:17:52.367+0000] {logging_mixin.py:151} INFO - [2023-08-25T15:17:52.366+0000] {dag.py:3677} INFO - Setting next_dagrun for example_dag_decorator to None, run_after=None
+[2023-08-25T15:17:52.404+0000] {processor.py:179} INFO - Processing /home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py took 0.477 seconds
+[2023-08-25T15:18:22.740+0000] {processor.py:157} INFO - Started process (PID=197905) to work on /home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py
+[2023-08-25T15:18:22.742+0000] {processor.py:829} INFO - Processing file /home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2023-08-25T15:18:22.744+0000] {logging_mixin.py:151} INFO - [2023-08-25T15:18:22.743+0000] {dagbag.py:539} INFO - Filling up the DagBag from /home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py
+[2023-08-25T15:18:22.870+0000] {processor.py:839} INFO - DAG(s) dict_keys(['example_dag_decorator']) retrieved from /home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py
+[2023-08-25T15:18:23.256+0000] {logging_mixin.py:151} INFO - [2023-08-25T15:18:23.255+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-25T15:18:23.267+0000] {logging_mixin.py:151} INFO - [2023-08-25T15:18:23.267+0000] {dag.py:3677} INFO - Setting next_dagrun for example_dag_decorator to None, run_after=None
+[2023-08-25T15:18:23.297+0000] {processor.py:179} INFO - Processing /home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py took 0.570 seconds
+[2023-08-25T15:18:55.528+0000] {processor.py:157} INFO - Started process (PID=198290) to work on /home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py
+[2023-08-25T15:18:55.532+0000] {processor.py:829} INFO - Processing file /home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2023-08-25T15:18:55.534+0000] {logging_mixin.py:151} INFO - [2023-08-25T15:18:55.533+0000] {dagbag.py:539} INFO - Filling up the DagBag from /home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py
+[2023-08-25T15:18:55.919+0000] {processor.py:839} INFO - DAG(s) dict_keys(['example_dag_decorator']) retrieved from /home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py
+[2023-08-25T15:18:56.036+0000] {logging_mixin.py:151} INFO - [2023-08-25T15:18:56.035+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-25T15:18:56.107+0000] {logging_mixin.py:151} INFO - [2023-08-25T15:18:56.102+0000] {dag.py:3677} INFO - Setting next_dagrun for example_dag_decorator to None, run_after=None
+[2023-08-25T15:18:56.209+0000] {processor.py:179} INFO - Processing /home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py took 0.709 seconds
+[2023-08-25T15:19:26.634+0000] {processor.py:157} INFO - Started process (PID=198752) to work on /home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py
+[2023-08-25T15:19:26.636+0000] {processor.py:829} INFO - Processing file /home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2023-08-25T15:19:26.638+0000] {logging_mixin.py:151} INFO - [2023-08-25T15:19:26.637+0000] {dagbag.py:539} INFO - Filling up the DagBag from /home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py
+[2023-08-25T15:19:26.788+0000] {processor.py:839} INFO - DAG(s) dict_keys(['example_dag_decorator']) retrieved from /home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py
+[2023-08-25T15:19:27.265+0000] {logging_mixin.py:151} INFO - [2023-08-25T15:19:27.265+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-25T15:19:27.279+0000] {logging_mixin.py:151} INFO - [2023-08-25T15:19:27.279+0000] {dag.py:3677} INFO - Setting next_dagrun for example_dag_decorator to None, run_after=None
+[2023-08-25T15:19:27.311+0000] {processor.py:179} INFO - Processing /home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py took 0.685 seconds
+[2023-08-25T15:19:58.541+0000] {processor.py:157} INFO - Started process (PID=199123) to work on /home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py
+[2023-08-25T15:19:58.544+0000] {processor.py:829} INFO - Processing file /home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2023-08-25T15:19:58.545+0000] {logging_mixin.py:151} INFO - [2023-08-25T15:19:58.545+0000] {dagbag.py:539} INFO - Filling up the DagBag from /home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py
+[2023-08-25T15:19:58.817+0000] {processor.py:839} INFO - DAG(s) dict_keys(['example_dag_decorator']) retrieved from /home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py
+[2023-08-25T15:19:59.583+0000] {logging_mixin.py:151} INFO - [2023-08-25T15:19:59.583+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-25T15:19:59.605+0000] {logging_mixin.py:151} INFO - [2023-08-25T15:19:59.604+0000] {dag.py:3677} INFO - Setting next_dagrun for example_dag_decorator to None, run_after=None
+[2023-08-25T15:19:59.669+0000] {processor.py:179} INFO - Processing /home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py took 1.137 seconds
+[2023-08-25T15:20:29.979+0000] {processor.py:157} INFO - Started process (PID=199644) to work on /home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py
+[2023-08-25T15:20:29.982+0000] {processor.py:829} INFO - Processing file /home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2023-08-25T15:20:29.984+0000] {logging_mixin.py:151} INFO - [2023-08-25T15:20:29.983+0000] {dagbag.py:539} INFO - Filling up the DagBag from /home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py
+[2023-08-25T15:20:30.136+0000] {processor.py:839} INFO - DAG(s) dict_keys(['example_dag_decorator']) retrieved from /home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py
+[2023-08-25T15:20:30.620+0000] {logging_mixin.py:151} INFO - [2023-08-25T15:20:30.620+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-25T15:20:30.634+0000] {logging_mixin.py:151} INFO - [2023-08-25T15:20:30.633+0000] {dag.py:3677} INFO - Setting next_dagrun for example_dag_decorator to None, run_after=None
+[2023-08-25T15:20:30.669+0000] {processor.py:179} INFO - Processing /home/data-engineer/GAAS_Data_System/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py took 0.698 seconds
