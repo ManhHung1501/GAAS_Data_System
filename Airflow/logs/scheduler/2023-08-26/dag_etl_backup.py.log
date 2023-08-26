@@ -1601,3 +1601,101 @@
 [2023-08-26T01:58:49.076+0000] {logging_mixin.py:151} INFO - [2023-08-26T01:58:49.075+0000] {dag.py:2907} INFO - Sync 1 DAGs
 [2023-08-26T01:58:49.127+0000] {logging_mixin.py:151} INFO - [2023-08-26T01:58:49.127+0000] {dag.py:3677} INFO - Setting next_dagrun for gaas_etl_backup to 2023-08-25T19:00:00+00:00, run_after=2023-08-26T19:00:00+00:00
 [2023-08-26T01:58:49.173+0000] {processor.py:179} INFO - Processing /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py took 1.049 seconds
+[2023-08-26T01:59:19.374+0000] {processor.py:157} INFO - Started process (PID=228571) to work on /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py
+[2023-08-26T01:59:19.376+0000] {processor.py:829} INFO - Processing file /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py for tasks to queue
+[2023-08-26T01:59:19.378+0000] {logging_mixin.py:151} INFO - [2023-08-26T01:59:19.377+0000] {dagbag.py:539} INFO - Filling up the DagBag from /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py
+[2023-08-26T01:59:20.192+0000] {processor.py:839} INFO - DAG(s) dict_keys(['gaas_etl_backup']) retrieved from /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py
+[2023-08-26T01:59:20.234+0000] {logging_mixin.py:151} INFO - [2023-08-26T01:59:20.233+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-26T01:59:20.268+0000] {logging_mixin.py:151} INFO - [2023-08-26T01:59:20.268+0000] {dag.py:3677} INFO - Setting next_dagrun for gaas_etl_backup to 2023-08-25T19:00:00+00:00, run_after=2023-08-26T19:00:00+00:00
+[2023-08-26T01:59:20.307+0000] {processor.py:179} INFO - Processing /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py took 0.940 seconds
+[2023-08-26T01:59:50.544+0000] {processor.py:157} INFO - Started process (PID=228710) to work on /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py
+[2023-08-26T01:59:50.546+0000] {processor.py:829} INFO - Processing file /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py for tasks to queue
+[2023-08-26T01:59:50.548+0000] {logging_mixin.py:151} INFO - [2023-08-26T01:59:50.547+0000] {dagbag.py:539} INFO - Filling up the DagBag from /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py
+[2023-08-26T01:59:51.389+0000] {processor.py:839} INFO - DAG(s) dict_keys(['gaas_etl_backup']) retrieved from /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py
+[2023-08-26T01:59:51.432+0000] {logging_mixin.py:151} INFO - [2023-08-26T01:59:51.431+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-26T01:59:51.477+0000] {logging_mixin.py:151} INFO - [2023-08-26T01:59:51.476+0000] {dag.py:3677} INFO - Setting next_dagrun for gaas_etl_backup to 2023-08-25T19:00:00+00:00, run_after=2023-08-26T19:00:00+00:00
+[2023-08-26T01:59:51.522+0000] {processor.py:179} INFO - Processing /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py took 0.985 seconds
+[2023-08-26T02:00:21.767+0000] {processor.py:157} INFO - Started process (PID=228915) to work on /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py
+[2023-08-26T02:00:21.769+0000] {processor.py:829} INFO - Processing file /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py for tasks to queue
+[2023-08-26T02:00:21.771+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:00:21.771+0000] {dagbag.py:539} INFO - Filling up the DagBag from /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py
+[2023-08-26T02:00:22.707+0000] {processor.py:839} INFO - DAG(s) dict_keys(['gaas_etl_backup']) retrieved from /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py
+[2023-08-26T02:00:22.793+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:00:22.788+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-26T02:00:22.845+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:00:22.845+0000] {dag.py:3677} INFO - Setting next_dagrun for gaas_etl_backup to 2023-08-25T19:00:00+00:00, run_after=2023-08-26T19:00:00+00:00
+[2023-08-26T02:00:22.884+0000] {processor.py:179} INFO - Processing /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py took 1.129 seconds
+[2023-08-26T02:00:53.068+0000] {processor.py:157} INFO - Started process (PID=228923) to work on /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py
+[2023-08-26T02:00:53.072+0000] {processor.py:829} INFO - Processing file /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py for tasks to queue
+[2023-08-26T02:00:53.074+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:00:53.073+0000] {dagbag.py:539} INFO - Filling up the DagBag from /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py
+[2023-08-26T02:00:54.068+0000] {processor.py:839} INFO - DAG(s) dict_keys(['gaas_etl_backup']) retrieved from /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py
+[2023-08-26T02:00:54.117+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:00:54.116+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-26T02:00:54.161+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:00:54.160+0000] {dag.py:3677} INFO - Setting next_dagrun for gaas_etl_backup to 2023-08-25T19:00:00+00:00, run_after=2023-08-26T19:00:00+00:00
+[2023-08-26T02:00:54.202+0000] {processor.py:179} INFO - Processing /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py took 1.145 seconds
+[2023-08-26T02:01:24.468+0000] {processor.py:157} INFO - Started process (PID=228930) to work on /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py
+[2023-08-26T02:01:24.471+0000] {processor.py:829} INFO - Processing file /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py for tasks to queue
+[2023-08-26T02:01:24.473+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:01:24.472+0000] {dagbag.py:539} INFO - Filling up the DagBag from /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py
+[2023-08-26T02:01:25.457+0000] {processor.py:839} INFO - DAG(s) dict_keys(['gaas_etl_backup']) retrieved from /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py
+[2023-08-26T02:01:25.501+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:01:25.500+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-26T02:01:25.538+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:01:25.538+0000] {dag.py:3677} INFO - Setting next_dagrun for gaas_etl_backup to 2023-08-25T19:00:00+00:00, run_after=2023-08-26T19:00:00+00:00
+[2023-08-26T02:01:25.572+0000] {processor.py:179} INFO - Processing /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py took 1.117 seconds
+[2023-08-26T02:01:55.757+0000] {processor.py:157} INFO - Started process (PID=228938) to work on /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py
+[2023-08-26T02:01:55.763+0000] {processor.py:829} INFO - Processing file /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py for tasks to queue
+[2023-08-26T02:01:55.765+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:01:55.764+0000] {dagbag.py:539} INFO - Filling up the DagBag from /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py
+[2023-08-26T02:01:56.576+0000] {processor.py:839} INFO - DAG(s) dict_keys(['gaas_etl_backup']) retrieved from /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py
+[2023-08-26T02:01:56.619+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:01:56.618+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-26T02:01:56.664+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:01:56.663+0000] {dag.py:3677} INFO - Setting next_dagrun for gaas_etl_backup to 2023-08-25T19:00:00+00:00, run_after=2023-08-26T19:00:00+00:00
+[2023-08-26T02:01:56.697+0000] {processor.py:179} INFO - Processing /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py took 0.946 seconds
+[2023-08-26T02:02:26.967+0000] {processor.py:157} INFO - Started process (PID=228945) to work on /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py
+[2023-08-26T02:02:26.971+0000] {processor.py:829} INFO - Processing file /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py for tasks to queue
+[2023-08-26T02:02:26.974+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:02:26.973+0000] {dagbag.py:539} INFO - Filling up the DagBag from /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py
+[2023-08-26T02:02:27.954+0000] {processor.py:839} INFO - DAG(s) dict_keys(['gaas_etl_backup']) retrieved from /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py
+[2023-08-26T02:02:27.999+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:02:27.998+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-26T02:02:28.037+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:02:28.037+0000] {dag.py:3677} INFO - Setting next_dagrun for gaas_etl_backup to 2023-08-25T19:00:00+00:00, run_after=2023-08-26T19:00:00+00:00
+[2023-08-26T02:02:28.073+0000] {processor.py:179} INFO - Processing /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py took 1.114 seconds
+[2023-08-26T02:02:58.263+0000] {processor.py:157} INFO - Started process (PID=228999) to work on /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py
+[2023-08-26T02:02:58.265+0000] {processor.py:829} INFO - Processing file /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py for tasks to queue
+[2023-08-26T02:02:58.267+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:02:58.267+0000] {dagbag.py:539} INFO - Filling up the DagBag from /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py
+[2023-08-26T02:02:59.089+0000] {processor.py:839} INFO - DAG(s) dict_keys(['gaas_etl_backup']) retrieved from /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py
+[2023-08-26T02:02:59.131+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:02:59.129+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-26T02:02:59.166+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:02:59.166+0000] {dag.py:3677} INFO - Setting next_dagrun for gaas_etl_backup to 2023-08-25T19:00:00+00:00, run_after=2023-08-26T19:00:00+00:00
+[2023-08-26T02:02:59.210+0000] {processor.py:179} INFO - Processing /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py took 0.954 seconds
+[2023-08-26T02:03:29.461+0000] {processor.py:157} INFO - Started process (PID=229140) to work on /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py
+[2023-08-26T02:03:29.463+0000] {processor.py:829} INFO - Processing file /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py for tasks to queue
+[2023-08-26T02:03:29.465+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:03:29.464+0000] {dagbag.py:539} INFO - Filling up the DagBag from /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py
+[2023-08-26T02:03:30.396+0000] {processor.py:839} INFO - DAG(s) dict_keys(['gaas_etl_backup']) retrieved from /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py
+[2023-08-26T02:03:30.459+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:03:30.458+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-26T02:03:30.501+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:03:30.500+0000] {dag.py:3677} INFO - Setting next_dagrun for gaas_etl_backup to 2023-08-25T19:00:00+00:00, run_after=2023-08-26T19:00:00+00:00
+[2023-08-26T02:03:30.536+0000] {processor.py:179} INFO - Processing /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py took 1.087 seconds
+[2023-08-26T02:04:00.723+0000] {processor.py:157} INFO - Started process (PID=229147) to work on /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py
+[2023-08-26T02:04:00.725+0000] {processor.py:829} INFO - Processing file /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py for tasks to queue
+[2023-08-26T02:04:00.727+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:04:00.726+0000] {dagbag.py:539} INFO - Filling up the DagBag from /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py
+[2023-08-26T02:04:01.545+0000] {processor.py:839} INFO - DAG(s) dict_keys(['gaas_etl_backup']) retrieved from /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py
+[2023-08-26T02:04:01.586+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:04:01.585+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-26T02:04:01.623+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:04:01.622+0000] {dag.py:3677} INFO - Setting next_dagrun for gaas_etl_backup to 2023-08-25T19:00:00+00:00, run_after=2023-08-26T19:00:00+00:00
+[2023-08-26T02:04:01.665+0000] {processor.py:179} INFO - Processing /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py took 0.948 seconds
+[2023-08-26T02:04:31.931+0000] {processor.py:157} INFO - Started process (PID=229157) to work on /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py
+[2023-08-26T02:04:31.933+0000] {processor.py:829} INFO - Processing file /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py for tasks to queue
+[2023-08-26T02:04:31.936+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:04:31.935+0000] {dagbag.py:539} INFO - Filling up the DagBag from /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py
+[2023-08-26T02:04:32.870+0000] {processor.py:839} INFO - DAG(s) dict_keys(['gaas_etl_backup']) retrieved from /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py
+[2023-08-26T02:04:32.940+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:04:32.938+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-26T02:04:32.975+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:04:32.974+0000] {dag.py:3677} INFO - Setting next_dagrun for gaas_etl_backup to 2023-08-25T19:00:00+00:00, run_after=2023-08-26T19:00:00+00:00
+[2023-08-26T02:04:33.011+0000] {processor.py:179} INFO - Processing /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py took 1.095 seconds
+[2023-08-26T02:05:03.189+0000] {processor.py:157} INFO - Started process (PID=229188) to work on /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py
+[2023-08-26T02:05:03.192+0000] {processor.py:829} INFO - Processing file /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py for tasks to queue
+[2023-08-26T02:05:03.194+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:05:03.193+0000] {dagbag.py:539} INFO - Filling up the DagBag from /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py
+[2023-08-26T02:05:03.999+0000] {processor.py:839} INFO - DAG(s) dict_keys(['gaas_etl_backup']) retrieved from /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py
+[2023-08-26T02:05:04.039+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:05:04.038+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-26T02:05:04.073+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:05:04.072+0000] {dag.py:3677} INFO - Setting next_dagrun for gaas_etl_backup to 2023-08-25T19:00:00+00:00, run_after=2023-08-26T19:00:00+00:00
+[2023-08-26T02:05:04.110+0000] {processor.py:179} INFO - Processing /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py took 0.928 seconds
+[2023-08-26T02:05:34.390+0000] {processor.py:157} INFO - Started process (PID=229367) to work on /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py
+[2023-08-26T02:05:34.392+0000] {processor.py:829} INFO - Processing file /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py for tasks to queue
+[2023-08-26T02:05:34.394+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:05:34.393+0000] {dagbag.py:539} INFO - Filling up the DagBag from /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py
+[2023-08-26T02:05:35.209+0000] {processor.py:839} INFO - DAG(s) dict_keys(['gaas_etl_backup']) retrieved from /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py
+[2023-08-26T02:05:35.248+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:05:35.247+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-26T02:05:35.294+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:05:35.294+0000] {dag.py:3677} INFO - Setting next_dagrun for gaas_etl_backup to 2023-08-25T19:00:00+00:00, run_after=2023-08-26T19:00:00+00:00
+[2023-08-26T02:05:35.328+0000] {processor.py:179} INFO - Processing /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py took 0.955 seconds
+[2023-08-26T02:06:05.530+0000] {processor.py:157} INFO - Started process (PID=229420) to work on /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py
+[2023-08-26T02:06:05.532+0000] {processor.py:829} INFO - Processing file /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py for tasks to queue
+[2023-08-26T02:06:05.534+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:06:05.534+0000] {dagbag.py:539} INFO - Filling up the DagBag from /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py
+[2023-08-26T02:06:06.376+0000] {processor.py:839} INFO - DAG(s) dict_keys(['gaas_etl_backup']) retrieved from /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py
+[2023-08-26T02:06:06.419+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:06:06.418+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-26T02:06:06.455+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:06:06.455+0000] {dag.py:3677} INFO - Setting next_dagrun for gaas_etl_backup to 2023-08-25T19:00:00+00:00, run_after=2023-08-26T19:00:00+00:00
+[2023-08-26T02:06:06.495+0000] {processor.py:179} INFO - Processing /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py took 0.973 seconds
