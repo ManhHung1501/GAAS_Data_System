@@ -1456,3 +1456,75 @@
 [2023-08-26T02:06:06.377+0000] {processor.py:839} INFO - DAG(s) dict_keys(['gaas_etl']) retrieved from /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py
 [2023-08-26T02:06:06.419+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:06:06.418+0000] {dag.py:2907} INFO - Sync 1 DAGs
 [2023-08-26T02:06:06.498+0000] {processor.py:179} INFO - Processing /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py took 1.016 seconds
+[2023-08-26T02:06:36.697+0000] {processor.py:157} INFO - Started process (PID=229698) to work on /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py
+[2023-08-26T02:06:36.699+0000] {processor.py:829} INFO - Processing file /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py for tasks to queue
+[2023-08-26T02:06:36.701+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:06:36.700+0000] {dagbag.py:539} INFO - Filling up the DagBag from /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py
+[2023-08-26T02:06:37.522+0000] {processor.py:839} INFO - DAG(s) dict_keys(['gaas_etl']) retrieved from /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py
+[2023-08-26T02:06:37.568+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:06:37.568+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-26T02:06:37.643+0000] {processor.py:179} INFO - Processing /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py took 0.954 seconds
+[2023-08-26T02:07:07.841+0000] {processor.py:157} INFO - Started process (PID=229842) to work on /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py
+[2023-08-26T02:07:07.844+0000] {processor.py:829} INFO - Processing file /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py for tasks to queue
+[2023-08-26T02:07:07.846+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:07:07.845+0000] {dagbag.py:539} INFO - Filling up the DagBag from /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py
+[2023-08-26T02:07:08.758+0000] {processor.py:839} INFO - DAG(s) dict_keys(['gaas_etl']) retrieved from /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py
+[2023-08-26T02:07:08.801+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:07:08.800+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-26T02:07:08.878+0000] {processor.py:179} INFO - Processing /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py took 1.046 seconds
+[2023-08-26T02:07:39.079+0000] {processor.py:157} INFO - Started process (PID=229943) to work on /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py
+[2023-08-26T02:07:39.081+0000] {processor.py:829} INFO - Processing file /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py for tasks to queue
+[2023-08-26T02:07:39.083+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:07:39.083+0000] {dagbag.py:539} INFO - Filling up the DagBag from /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py
+[2023-08-26T02:07:39.913+0000] {processor.py:839} INFO - DAG(s) dict_keys(['gaas_etl']) retrieved from /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py
+[2023-08-26T02:07:39.956+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:07:39.955+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-26T02:07:40.026+0000] {processor.py:179} INFO - Processing /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py took 0.956 seconds
+[2023-08-26T02:08:10.227+0000] {processor.py:157} INFO - Started process (PID=229973) to work on /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py
+[2023-08-26T02:08:10.231+0000] {processor.py:829} INFO - Processing file /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py for tasks to queue
+[2023-08-26T02:08:10.240+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:08:10.239+0000] {dagbag.py:539} INFO - Filling up the DagBag from /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py
+[2023-08-26T02:08:11.150+0000] {processor.py:839} INFO - DAG(s) dict_keys(['gaas_etl']) retrieved from /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py
+[2023-08-26T02:08:11.192+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:08:11.191+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-26T02:08:11.281+0000] {processor.py:179} INFO - Processing /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py took 1.062 seconds
+[2023-08-26T02:08:41.450+0000] {processor.py:157} INFO - Started process (PID=230080) to work on /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py
+[2023-08-26T02:08:41.452+0000] {processor.py:829} INFO - Processing file /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py for tasks to queue
+[2023-08-26T02:08:41.455+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:08:41.454+0000] {dagbag.py:539} INFO - Filling up the DagBag from /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py
+[2023-08-26T02:08:42.313+0000] {processor.py:839} INFO - DAG(s) dict_keys(['gaas_etl']) retrieved from /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py
+[2023-08-26T02:08:42.362+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:08:42.361+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-26T02:08:42.437+0000] {processor.py:179} INFO - Processing /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py took 0.997 seconds
+[2023-08-26T02:09:12.635+0000] {processor.py:157} INFO - Started process (PID=230275) to work on /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py
+[2023-08-26T02:09:12.636+0000] {processor.py:829} INFO - Processing file /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py for tasks to queue
+[2023-08-26T02:09:12.638+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:09:12.638+0000] {dagbag.py:539} INFO - Filling up the DagBag from /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py
+[2023-08-26T02:09:13.473+0000] {processor.py:839} INFO - DAG(s) dict_keys(['gaas_etl']) retrieved from /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py
+[2023-08-26T02:09:13.515+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:09:13.514+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-26T02:09:13.591+0000] {processor.py:179} INFO - Processing /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py took 0.964 seconds
+[2023-08-26T02:09:43.803+0000] {processor.py:157} INFO - Started process (PID=230433) to work on /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py
+[2023-08-26T02:09:43.806+0000] {processor.py:829} INFO - Processing file /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py for tasks to queue
+[2023-08-26T02:09:43.808+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:09:43.807+0000] {dagbag.py:539} INFO - Filling up the DagBag from /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py
+[2023-08-26T02:09:44.735+0000] {processor.py:839} INFO - DAG(s) dict_keys(['gaas_etl']) retrieved from /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py
+[2023-08-26T02:09:44.780+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:09:44.779+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-26T02:09:44.854+0000] {processor.py:179} INFO - Processing /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py took 1.058 seconds
+[2023-08-26T02:10:15.040+0000] {processor.py:157} INFO - Started process (PID=230721) to work on /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py
+[2023-08-26T02:10:15.043+0000] {processor.py:829} INFO - Processing file /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py for tasks to queue
+[2023-08-26T02:10:15.045+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:10:15.044+0000] {dagbag.py:539} INFO - Filling up the DagBag from /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py
+[2023-08-26T02:10:15.976+0000] {processor.py:839} INFO - DAG(s) dict_keys(['gaas_etl']) retrieved from /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py
+[2023-08-26T02:10:16.019+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:10:16.018+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-26T02:10:16.114+0000] {processor.py:179} INFO - Processing /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py took 1.084 seconds
+[2023-08-26T02:10:46.382+0000] {processor.py:157} INFO - Started process (PID=230828) to work on /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py
+[2023-08-26T02:10:46.390+0000] {processor.py:829} INFO - Processing file /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py for tasks to queue
+[2023-08-26T02:10:46.392+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:10:46.392+0000] {dagbag.py:539} INFO - Filling up the DagBag from /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py
+[2023-08-26T02:10:47.328+0000] {processor.py:839} INFO - DAG(s) dict_keys(['gaas_etl']) retrieved from /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py
+[2023-08-26T02:10:47.385+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:10:47.384+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-26T02:10:47.458+0000] {processor.py:179} INFO - Processing /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py took 1.104 seconds
+[2023-08-26T02:11:17.649+0000] {processor.py:157} INFO - Started process (PID=231038) to work on /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py
+[2023-08-26T02:11:17.652+0000] {processor.py:829} INFO - Processing file /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py for tasks to queue
+[2023-08-26T02:11:17.654+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:11:17.653+0000] {dagbag.py:539} INFO - Filling up the DagBag from /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py
+[2023-08-26T02:11:18.493+0000] {processor.py:839} INFO - DAG(s) dict_keys(['gaas_etl']) retrieved from /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py
+[2023-08-26T02:11:18.535+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:11:18.534+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-26T02:11:18.611+0000] {processor.py:179} INFO - Processing /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py took 0.970 seconds
+[2023-08-26T02:11:48.818+0000] {processor.py:157} INFO - Started process (PID=231080) to work on /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py
+[2023-08-26T02:11:48.821+0000] {processor.py:829} INFO - Processing file /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py for tasks to queue
+[2023-08-26T02:11:48.822+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:11:48.822+0000] {dagbag.py:539} INFO - Filling up the DagBag from /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py
+[2023-08-26T02:11:49.634+0000] {processor.py:839} INFO - DAG(s) dict_keys(['gaas_etl']) retrieved from /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py
+[2023-08-26T02:11:49.677+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:11:49.676+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-26T02:11:49.745+0000] {processor.py:179} INFO - Processing /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py took 0.935 seconds
+[2023-08-26T02:12:19.952+0000] {processor.py:157} INFO - Started process (PID=231193) to work on /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py
+[2023-08-26T02:12:19.954+0000] {processor.py:829} INFO - Processing file /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py for tasks to queue
+[2023-08-26T02:12:19.956+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:12:19.955+0000] {dagbag.py:539} INFO - Filling up the DagBag from /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py
+[2023-08-26T02:12:20.953+0000] {processor.py:839} INFO - DAG(s) dict_keys(['gaas_etl']) retrieved from /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py
+[2023-08-26T02:12:21.004+0000] {logging_mixin.py:151} INFO - [2023-08-26T02:12:21.003+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-26T02:12:21.085+0000] {processor.py:179} INFO - Processing /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py took 1.141 seconds

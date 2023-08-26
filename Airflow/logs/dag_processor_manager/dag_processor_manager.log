@@ -9870,3 +9870,113 @@ File Path                                                            PID    Runt
 /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  0.98s           2023-08-26T02:05:35
 /home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  1.00s           2023-08-26T02:05:35
 ================================================================================
+[2023-08-26T02:06:31.650+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  1.06s           2023-08-26T02:06:06
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  1.04s           2023-08-26T02:06:06
+================================================================================
+[2023-08-26T02:07:01.786+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  0.99s           2023-08-26T02:06:37
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  0.98s           2023-08-26T02:06:37
+================================================================================
+[2023-08-26T02:07:32.014+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  1.08s           2023-08-26T02:07:08
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  1.07s           2023-08-26T02:07:08
+================================================================================
+[2023-08-26T02:08:02.160+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  1.00s           2023-08-26T02:07:40
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  0.97s           2023-08-26T02:07:40
+================================================================================
+[2023-08-26T02:08:32.378+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  1.10s           2023-08-26T02:08:11
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  1.08s           2023-08-26T02:08:11
+================================================================================
+[2023-08-26T02:09:02.566+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  1.05s           2023-08-26T02:08:42
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  1.03s           2023-08-26T02:08:42
+================================================================================
+[2023-08-26T02:09:32.732+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  1.00s           2023-08-26T02:09:13
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  1.00s           2023-08-26T02:09:13
+================================================================================
+[2023-08-26T02:10:02.953+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  1.09s           2023-08-26T02:09:44
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  1.07s           2023-08-26T02:09:44
+================================================================================
+[2023-08-26T02:10:24.192+0000] {manager.py:760} INFO - Searching for files in /home/data-engineer/GAAS_Data_System/Airflow/dags
+[2023-08-26T02:10:24.195+0000] {manager.py:763} INFO - There are 2 files in /home/data-engineer/GAAS_Data_System/Airflow/dags
+[2023-08-26T02:10:33.267+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  1.12s           2023-08-26T02:10:16
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  1.12s           2023-08-26T02:10:16
+================================================================================
+[2023-08-26T02:11:03.559+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  1.14s           2023-08-26T02:10:47
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  1.17s           2023-08-26T02:10:47
+================================================================================
+[2023-08-26T02:11:33.718+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  1.00s           2023-08-26T02:11:18
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  1.01s           2023-08-26T02:11:18
+================================================================================
+[2023-08-26T02:12:03.847+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl.py                                  1           0  0.97s           2023-08-26T02:11:49
+/home/data-engineer/GAAS_Data_System/Airflow/dags/dag_etl_backup.py                           1           0  0.98s           2023-08-26T02:11:49
+================================================================================
