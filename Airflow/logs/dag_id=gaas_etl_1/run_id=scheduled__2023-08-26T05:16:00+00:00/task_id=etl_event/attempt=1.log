@@ -1,0 +1,93 @@
+[2023-08-26T05:17:03.833+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: gaas_etl_1.etl_event scheduled__2023-08-26T05:16:00+00:00 [queued]>
+[2023-08-26T05:17:03.848+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: gaas_etl_1.etl_event scheduled__2023-08-26T05:16:00+00:00 [queued]>
+[2023-08-26T05:17:03.849+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-08-26T05:17:03.875+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): etl_event> on 2023-08-26 05:16:00+00:00
+[2023-08-26T05:17:03.883+0000] {standard_task_runner.py:57} INFO - Started process 281070 to run task
+[2023-08-26T05:17:03.898+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'gaas_etl_1', 'etl_event', 'scheduled__2023-08-26T05:16:00+00:00', '--job-id', '220', '--raw', '--subdir', 'DAGS_FOLDER/dag_etl.py', '--cfg-path', '/tmp/tmphq0g9ift']
+[2023-08-26T05:17:03.903+0000] {standard_task_runner.py:85} INFO - Job 220: Subtask etl_event
+[2023-08-26T05:17:04.027+0000] {task_command.py:415} INFO - Running <TaskInstance: gaas_etl_1.etl_event scheduled__2023-08-26T05:16:00+00:00 [running]> on host data-system.us-central1-a.c.data-system-392010.internal
+[2023-08-26T05:17:04.215+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='hungnm15012002@gmail.com' AIRFLOW_CTX_DAG_OWNER='hungnm' AIRFLOW_CTX_DAG_ID='gaas_etl_1' AIRFLOW_CTX_TASK_ID='etl_event' AIRFLOW_CTX_EXECUTION_DATE='2023-08-26T05:16:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-08-26T05:16:00+00:00'
+[2023-08-26T05:17:04.240+0000] {dag_etl.py:116} INFO - Extracting event...
+[2023-08-26T05:17:07.649+0000] {extract.py:36} INFO - Request time: 0:00:03.408528
+[2023-08-26T05:17:08.165+0000] {extract.py:42} INFO - Create DataFrame time: 0:00:00.515599
+[2023-08-26T05:17:08.171+0000] {dag_etl.py:119} INFO - Complete extract event: 0:00:03.931543
+[2023-08-26T05:17:08.172+0000] {dag_etl.py:121} INFO - Transforming action...
+[2023-08-26T05:17:08.191+0000] {logging_mixin.py:151} WARNING - /home/data-engineer/GAAS_Data_System/ETL/transform.py:52 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2023-08-26T05:17:08.217+0000] {logging_mixin.py:151} WARNING - /home/data-engineer/GAAS_Data_System/ETL/transform.py:53 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2023-08-26T05:17:12.727+0000] {logging_mixin.py:151} WARNING - /home/data-engineer/GAAS_Data_System/ETL/transform.py:57 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2023-08-26T05:17:12.732+0000] {logging_mixin.py:151} WARNING - /home/data-engineer/GAAS_Data_System/ETL/transform.py:58 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2023-08-26T05:17:12.736+0000] {logging_mixin.py:151} WARNING - /home/data-engineer/GAAS_Data_System/ETL/verify_func.py:70 UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+[2023-08-26T05:17:12.744+0000] {logging_mixin.py:151} WARNING - /home/data-engineer/GAAS_Data_System/ETL/transform.py:65 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2023-08-26T05:17:12.761+0000] {dag_etl.py:124} INFO - Complete transform action: 0:00:04.589687
+[2023-08-26T05:17:12.762+0000] {dag_etl.py:126} INFO - Transforming transaction...
+[2023-08-26T05:17:12.771+0000] {logging_mixin.py:151} WARNING - /home/data-engineer/GAAS_Data_System/ETL/transform.py:45 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2023-08-26T05:17:12.776+0000] {logging_mixin.py:151} WARNING - /home/data-engineer/GAAS_Data_System/ETL/transform.py:48 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2023-08-26T05:17:12.781+0000] {logging_mixin.py:151} WARNING - /home/data-engineer/GAAS_Data_System/ETL/transform.py:49 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2023-08-26T05:17:12.784+0000] {logging_mixin.py:151} WARNING - /home/data-engineer/GAAS_Data_System/ETL/transform.py:52 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2023-08-26T05:17:12.799+0000] {logging_mixin.py:151} WARNING - /home/data-engineer/GAAS_Data_System/ETL/transform.py:53 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2023-08-26T05:17:15.022+0000] {logging_mixin.py:151} WARNING - /home/data-engineer/GAAS_Data_System/ETL/transform.py:57 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2023-08-26T05:17:15.026+0000] {logging_mixin.py:151} WARNING - /home/data-engineer/GAAS_Data_System/ETL/transform.py:58 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2023-08-26T05:17:15.027+0000] {logging_mixin.py:151} WARNING - /home/data-engineer/GAAS_Data_System/ETL/verify_func.py:70 UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+[2023-08-26T05:17:15.034+0000] {logging_mixin.py:151} WARNING - /home/data-engineer/GAAS_Data_System/ETL/transform.py:65 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2023-08-26T05:17:15.045+0000] {dag_etl.py:129} INFO - Complete transform transaction: 0:00:02.284451
+[2023-08-26T05:17:15.046+0000] {dag_etl.py:131} INFO - Loading action...
+[2023-08-26T05:17:15.888+0000] {dag_etl.py:134} INFO - Complete load action: 0:00:00.842494
+[2023-08-26T05:17:15.888+0000] {dag_etl.py:136} INFO - Loading transaction...
+[2023-08-26T05:17:16.425+0000] {dag_etl.py:139} INFO - Complete load transaction: 0:00:00.537459
+[2023-08-26T05:17:16.426+0000] {dag_etl.py:141} INFO - Complete ETL Events in : 0:00:12.186196
+[2023-08-26T05:17:16.440+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-08-26T05:17:16.454+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=gaas_etl_1, task_id=etl_event, execution_date=20230826T051600, start_date=20230826T051703, end_date=20230826T051716
+[2023-08-26T05:17:16.506+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-08-26T05:17:16.529+0000] {taskinstance.py:2784} INFO - 0 downstream tasks scheduled from follow-on schedule check

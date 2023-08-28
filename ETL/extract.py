@@ -19,14 +19,14 @@ def extract(collection, greater_time, less_than_time):
     if collection == "log":
         body["greater"] = greater_time
         body["less"] = less_than_time
-        col = "event"
+        col = "events"
     else:
-        col = "user"
+        col = "users"
         body["con"] = {
                         "$and": 
                     [
-                        { "last_online" : {"$gte": 1692266430000} }, 
-                        { "last_online" : {"$lt": 1692266490000} }
+                        { "last_online" : {"$gte": greater_time} }, 
+                        { "last_online" : {"$lt": less_than_time} }
                     ]
                 }
         
@@ -42,11 +42,11 @@ def extract(collection, greater_time, less_than_time):
             logging.info(f"Create DataFrame time: {datetime.now() - now}")
             return df
         else:
-            logging.error("Server GAAS error:", response.status_code)
+            logging.error(f"Server GAAS error: {response.status_code}")
             cache_process(greater_time, less_than_time, col)
             return -1
             
     except requests.exceptions.RequestException as e:
-        logging.error("Request Exception Error :", e)
+        logging.error(f"Request Exception Error : {e}")
         cache_process(greater_time, less_than_time, col)
         return -1

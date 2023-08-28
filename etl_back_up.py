@@ -5,6 +5,7 @@ from ETL.load import load
 from datetime import date, datetime, timedelta
 import pandas as pd
 import logging
+import mysql
 
 # Set up log file path
 log_file_path = "/home/data-engineer/GAAS_Data_System/ETL/log/etl_log_{date}.log".format(date=date.today().strftime('%Y%m%d'))
@@ -130,13 +131,23 @@ if __name__ == "__main__":
         greater = int(df['greater'][index])
         less = int(df['less'][index])
         if df['status'][index] != 'success':
-            if df['collection'][index] == 'user':
-                etl_user_items(greater,less)
-                df['status'][index] = 'success'
+            if df['collection'][index] == 'users':
+                try:
+                    etl_user_items(greater,less)
+                    df['status'][index] = 'success'
+                except OSError as error:
+                    df['status'][index] =  error
+                except AttributeError as atr_error:
+                    df['status'][index] =  atr_error
                 df.to_csv(csv_file_path, index=False)
-            elif df['collection'][index] == 'event':
-                etl_event(greater,less)
-                df['status'][index] = 'success'
+            elif df['collection'][index] == 'events':
+                try:
+                    etl_event(greater,less)
+                    df['status'][index] = 'success'
+                except mysql.connector.Error as error:
+                    df['status'][index] =  error
+                except Exception  as unexpected_error:
+                    df['status'][index] =  unexpected_error          
                 df.to_csv(csv_file_path, index=False)
     # except:
     #    print('No data to back up')

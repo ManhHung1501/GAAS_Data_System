@@ -20,8 +20,8 @@ insert into users
     total_ship_star, total_skinlv_star, total_drone_star, hero_level_star,
     miniboss_level_star, campaign_star, ship_skinlv_star, drone_level_star,
     ship_level_star, change_local_time, creation_time, creation_date, app_version,
-    client_version)
-values (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    client_version, inserted_time)
+values (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
 ON DUPLICATE KEY UPDATE
     country_code = VALUES(country_code),
     campaign_level = VALUES(campaign_level),
@@ -51,8 +51,8 @@ ON DUPLICATE KEY UPDATE
 """
 
 sl = """
-INSERT INTO space_ships (user_id, ship_index, bullet_level, power_level, evolve_level, experience_point, skin)
-VALUES (%s, %s, %s, %s, %s, %s, %s)
+INSERT INTO space_ships (user_id, ship_index, bullet_level, power_level, evolve_level, experience_point, skin, inserted_time)
+VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
 ON DUPLICATE KEY UPDATE
     bullet_level = VALUES(bullet_level),
     power_level = VALUES(power_level),
@@ -63,8 +63,8 @@ ON DUPLICATE KEY UPDATE
 
 dl = """
 INSERT INTO drones 
-    (user_id, drone_index, power_level, skin)
-VALUES (%s, %s, %s, %s)
+    (user_id, drone_index, power_level, skin, inserted_time)
+VALUES (%s, %s, %s, %s, %s)
 ON DUPLICATE KEY UPDATE
     power_level = VALUES(power_level),
     skin = VALUES(skin);
@@ -72,24 +72,24 @@ ON DUPLICATE KEY UPDATE
 
 pl = """
 INSERT INTO pilots 
-    (user_id, pilot_id, pilot_level)
-VALUES (%s, %s, %s)
+    (user_id, pilot_id, pilot_level, inserted_time)
+VALUES (%s, %s, %s, %s)
 ON DUPLICATE KEY UPDATE
     pilot_level = VALUES(pilot_level);
 """
 
 tl = """
 INSERT INTO talents 
-    (user_id, talent_id, talent_level)
-VALUES (%s, %s, %s)
+    (user_id, talent_id, talent_level, inserted_time)
+VALUES (%s, %s, %s, %s)
 ON DUPLICATE KEY UPDATE
     talent_level = VALUES(talent_level);
 """
 
 xl = """
 INSERT INTO expert_items 
-    (user_id, expert_item_id, expert_item_level, equipping_ship, slot_equipped)
-VALUES (%s, %s, %s, %s, %s)
+    (user_id, expert_item_id, expert_item_level, equipping_ship, slot_equipped, inserted_time)
+VALUES (%s, %s, %s, %s, %s, %s)
 ON DUPLICATE KEY UPDATE
     expert_item_level = VALUES(expert_item_level),
     equipping_ship = VALUES(equipping_ship),

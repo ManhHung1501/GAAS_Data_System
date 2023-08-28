@@ -1,0 +1,46 @@
+[2023-08-27T23:38:07.240+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: gaas_etl_1.etl_user scheduled__2023-08-27T23:37:00+00:00 [queued]>
+[2023-08-27T23:38:07.256+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: gaas_etl_1.etl_user scheduled__2023-08-27T23:37:00+00:00 [queued]>
+[2023-08-27T23:38:07.257+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-08-27T23:38:07.282+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): etl_user> on 2023-08-27 23:37:00+00:00
+[2023-08-27T23:38:07.291+0000] {standard_task_runner.py:57} INFO - Started process 474659 to run task
+[2023-08-27T23:38:07.305+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'gaas_etl_1', 'etl_user', 'scheduled__2023-08-27T23:37:00+00:00', '--job-id', '7845', '--raw', '--subdir', 'DAGS_FOLDER/dag_etl.py', '--cfg-path', '/tmp/tmpaj39e485']
+[2023-08-27T23:38:07.310+0000] {standard_task_runner.py:85} INFO - Job 7845: Subtask etl_user
+[2023-08-27T23:38:08.206+0000] {task_command.py:415} INFO - Running <TaskInstance: gaas_etl_1.etl_user scheduled__2023-08-27T23:37:00+00:00 [running]> on host data-system.us-central1-a.c.data-system-392010.internal
+[2023-08-27T23:38:08.779+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='hungnm15012002@gmail.com' AIRFLOW_CTX_DAG_OWNER='hungnm' AIRFLOW_CTX_DAG_ID='gaas_etl_1' AIRFLOW_CTX_TASK_ID='etl_user' AIRFLOW_CTX_EXECUTION_DATE='2023-08-27T23:37:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-08-27T23:37:00+00:00'
+[2023-08-27T23:38:08.798+0000] {dag_etl.py:28} INFO - Extracting user...
+[2023-08-27T23:38:12.072+0000] {extract.py:36} INFO - Request time: 0:00:03.273900
+[2023-08-27T23:38:12.392+0000] {extract.py:42} INFO - Create DataFrame time: 0:00:00.319187
+[2023-08-27T23:38:12.395+0000] {dag_etl.py:31} INFO - Complete extract user: 0:00:03.597561
+[2023-08-27T23:38:12.396+0000] {dag_etl.py:33} INFO - Extracting resource...
+[2023-08-27T23:38:14.406+0000] {extract.py:36} INFO - Request time: 0:00:02.010075
+[2023-08-27T23:38:14.461+0000] {extract.py:42} INFO - Create DataFrame time: 0:00:00.054209
+[2023-08-27T23:38:14.464+0000] {dag_etl.py:36} INFO - Complete extract resource: 0:00:02.068657
+[2023-08-27T23:38:14.466+0000] {dag_etl.py:38} INFO - Transforming user...
+[2023-08-27T23:38:14.662+0000] {dag_etl.py:42} INFO - Complete transform user: 0:00:00.198024
+[2023-08-27T23:38:14.663+0000] {dag_etl.py:44} INFO - transform space_ships...
+[2023-08-27T23:38:14.763+0000] {dag_etl.py:47} INFO - Complete transform space_ships: 0:00:00.100849
+[2023-08-27T23:38:14.763+0000] {dag_etl.py:49} INFO - transform drones...
+[2023-08-27T23:38:14.837+0000] {dag_etl.py:52} INFO - Complete transform drones: 0:00:00.073784
+[2023-08-27T23:38:14.837+0000] {dag_etl.py:54} INFO - transform pilots...
+[2023-08-27T23:38:14.892+0000] {dag_etl.py:57} INFO - Complete transform pilots: 0:00:00.055699
+[2023-08-27T23:38:14.893+0000] {dag_etl.py:59} INFO - transform talents...
+[2023-08-27T23:38:14.921+0000] {dag_etl.py:62} INFO - Complete transform talents: 0:00:00.029193
+[2023-08-27T23:38:14.922+0000] {dag_etl.py:64} INFO - transform expert_items...
+[2023-08-27T23:38:14.945+0000] {dag_etl.py:67} INFO - Complete transform expert_items: 0:00:00.024011
+[2023-08-27T23:38:14.946+0000] {dag_etl.py:69} INFO - Loading user...
+[2023-08-27T23:38:15.632+0000] {dag_etl.py:72} INFO - Complete load user: 0:00:00.686841
+[2023-08-27T23:38:15.633+0000] {dag_etl.py:74} INFO - Loading space_ships...
+[2023-08-27T23:38:16.621+0000] {dag_etl.py:77} INFO - Complete load space_ships: 0:00:00.989129
+[2023-08-27T23:38:16.622+0000] {dag_etl.py:79} INFO - Loading drones...
+[2023-08-27T23:38:17.283+0000] {dag_etl.py:82} INFO - Complete load drones: 0:00:00.661815
+[2023-08-27T23:38:17.284+0000] {dag_etl.py:84} INFO - Loading pilots...
+[2023-08-27T23:38:19.075+0000] {dag_etl.py:87} INFO - Complete load drones: 0:00:01.791937
+[2023-08-27T23:38:19.076+0000] {dag_etl.py:89} INFO - Loading talents...
+[2023-08-27T23:38:19.858+0000] {dag_etl.py:92} INFO - Complete load drones: 0:00:00.782507
+[2023-08-27T23:38:19.858+0000] {dag_etl.py:94} INFO - Loading expert_items...
+[2023-08-27T23:38:20.357+0000] {dag_etl.py:97} INFO - Complete load drones: 0:00:00.498846
+[2023-08-27T23:38:20.357+0000] {dag_etl.py:99} INFO - Complete ETL Users in : 0:00:11.559461
+[2023-08-27T23:38:20.370+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-08-27T23:38:20.388+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=gaas_etl_1, task_id=etl_user, execution_date=20230827T233700, start_date=20230827T233807, end_date=20230827T233820
+[2023-08-27T23:38:20.462+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-08-27T23:38:20.489+0000] {taskinstance.py:2784} INFO - 0 downstream tasks scheduled from follow-on schedule check

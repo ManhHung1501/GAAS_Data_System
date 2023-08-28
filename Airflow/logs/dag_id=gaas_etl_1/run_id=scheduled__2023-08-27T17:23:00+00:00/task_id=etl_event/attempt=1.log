@@ -1,0 +1,18 @@
+[2023-08-27T17:24:07.388+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: gaas_etl_1.etl_event scheduled__2023-08-27T17:23:00+00:00 [queued]>
+[2023-08-27T17:24:07.405+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: gaas_etl_1.etl_event scheduled__2023-08-27T17:23:00+00:00 [queued]>
+[2023-08-27T17:24:07.406+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-08-27T17:24:07.444+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): etl_event> on 2023-08-27 17:23:00+00:00
+[2023-08-27T17:24:07.455+0000] {standard_task_runner.py:57} INFO - Started process 435389 to run task
+[2023-08-27T17:24:07.467+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'gaas_etl_1', 'etl_event', 'scheduled__2023-08-27T17:23:00+00:00', '--job-id', '6723', '--raw', '--subdir', 'DAGS_FOLDER/dag_etl.py', '--cfg-path', '/tmp/tmpr5l58vrn']
+[2023-08-27T17:24:07.473+0000] {standard_task_runner.py:85} INFO - Job 6723: Subtask etl_event
+[2023-08-27T17:24:08.294+0000] {task_command.py:415} INFO - Running <TaskInstance: gaas_etl_1.etl_event scheduled__2023-08-27T17:23:00+00:00 [running]> on host data-system.us-central1-a.c.data-system-392010.internal
+[2023-08-27T17:24:09.075+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='hungnm15012002@gmail.com' AIRFLOW_CTX_DAG_OWNER='hungnm' AIRFLOW_CTX_DAG_ID='gaas_etl_1' AIRFLOW_CTX_TASK_ID='etl_event' AIRFLOW_CTX_EXECUTION_DATE='2023-08-27T17:23:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-08-27T17:23:00+00:00'
+[2023-08-27T17:24:09.099+0000] {dag_etl.py:116} INFO - Extracting event...
+[2023-08-27T17:24:39.188+0000] {extract.py:50} ERROR - Request Exception Error : HTTPSConnectionPool(host='as1.abiteams.com', port=443): Read timed out. (read timeout=30)
+[2023-08-27T17:24:39.199+0000] {dag_etl.py:119} INFO - Complete extract event: 0:00:30.099944
+[2023-08-27T17:24:39.200+0000] {dag_etl.py:121} INFO - Transforming action...
+[2023-08-27T17:24:39.205+0000] {dag_etl.py:149} ERROR - An Error Occur: object of type 'int' has no len()
+[2023-08-27T17:24:39.205+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-08-27T17:24:39.225+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=gaas_etl_1, task_id=etl_event, execution_date=20230827T172300, start_date=20230827T172407, end_date=20230827T172439
+[2023-08-27T17:24:39.268+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-08-27T17:24:39.296+0000] {taskinstance.py:2784} INFO - 0 downstream tasks scheduled from follow-on schedule check

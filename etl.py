@@ -2,13 +2,24 @@ from ETL.extract import extract
 from ETL.transform import transform_events,transform_items,transform_users
 from verify_func import get_last_processed_timestamp,update_last_processed_timestamp
 from ETL.load import load
+from datetime import datetime, date
+import logging
+
+
+# Set up log file path
+log_file_path = "/home/data-engineer/GAAS_Data_System/ETL/log/etl_log_{date}.log".format(date=date.today().strftime('%Y%m%d'))
+# Set up logging configuration
+logging.basicConfig(
+    filename=log_file_path,
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s"
+)
 
 def get_process_time():
     greater_time = get_last_processed_timestamp()
     if greater_time == None:
         greater_time = 1692266490000
     less_than_time = greater_time + 60000
-    update_last_processed_timestamp(less_than_time)
     return greater_time,less_than_time
 
 def etl_user_items(greater, less):

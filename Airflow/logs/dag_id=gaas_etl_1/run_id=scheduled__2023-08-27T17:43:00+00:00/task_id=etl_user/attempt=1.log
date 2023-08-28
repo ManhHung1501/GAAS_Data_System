@@ -1,0 +1,23 @@
+[2023-08-27T17:44:07.075+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: gaas_etl_1.etl_user scheduled__2023-08-27T17:43:00+00:00 [queued]>
+[2023-08-27T17:44:07.092+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: gaas_etl_1.etl_user scheduled__2023-08-27T17:43:00+00:00 [queued]>
+[2023-08-27T17:44:07.092+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-08-27T17:44:07.121+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): etl_user> on 2023-08-27 17:43:00+00:00
+[2023-08-27T17:44:07.131+0000] {standard_task_runner.py:57} INFO - Started process 437520 to run task
+[2023-08-27T17:44:07.146+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'gaas_etl_1', 'etl_user', 'scheduled__2023-08-27T17:43:00+00:00', '--job-id', '6782', '--raw', '--subdir', 'DAGS_FOLDER/dag_etl.py', '--cfg-path', '/tmp/tmpk3a1qmu_']
+[2023-08-27T17:44:07.151+0000] {standard_task_runner.py:85} INFO - Job 6782: Subtask etl_user
+[2023-08-27T17:44:08.018+0000] {task_command.py:415} INFO - Running <TaskInstance: gaas_etl_1.etl_user scheduled__2023-08-27T17:43:00+00:00 [running]> on host data-system.us-central1-a.c.data-system-392010.internal
+[2023-08-27T17:44:08.699+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='hungnm15012002@gmail.com' AIRFLOW_CTX_DAG_OWNER='hungnm' AIRFLOW_CTX_DAG_ID='gaas_etl_1' AIRFLOW_CTX_TASK_ID='etl_user' AIRFLOW_CTX_EXECUTION_DATE='2023-08-27T17:43:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-08-27T17:43:00+00:00'
+[2023-08-27T17:44:08.727+0000] {dag_etl.py:28} INFO - Extracting user...
+[2023-08-27T17:44:09.310+0000] {extract.py:36} INFO - Request time: 0:00:00.582741
+[2023-08-27T17:44:09.316+0000] {extract.py:42} INFO - Create DataFrame time: 0:00:00.005364
+[2023-08-27T17:44:09.318+0000] {dag_etl.py:31} INFO - Complete extract user: 0:00:00.591578
+[2023-08-27T17:44:09.319+0000] {dag_etl.py:33} INFO - Extracting resource...
+[2023-08-27T17:44:09.662+0000] {extract.py:36} INFO - Request time: 0:00:00.342495
+[2023-08-27T17:44:09.664+0000] {extract.py:42} INFO - Create DataFrame time: 0:00:00.001023
+[2023-08-27T17:44:09.665+0000] {dag_etl.py:36} INFO - Complete extract resource: 0:00:00.346991
+[2023-08-27T17:44:09.666+0000] {dag_etl.py:38} INFO - Transforming user...
+[2023-08-27T17:44:09.675+0000] {dag_etl.py:107} ERROR - An Error Occur: 'user_id'
+[2023-08-27T17:44:09.675+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-08-27T17:44:09.688+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=gaas_etl_1, task_id=etl_user, execution_date=20230827T174300, start_date=20230827T174407, end_date=20230827T174409
+[2023-08-27T17:44:09.721+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-08-27T17:44:09.748+0000] {taskinstance.py:2784} INFO - 0 downstream tasks scheduled from follow-on schedule check

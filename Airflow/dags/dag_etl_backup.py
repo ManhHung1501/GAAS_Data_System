@@ -122,23 +122,33 @@ def run_backup_etl():
     today = date.today()
     previous_day = today - timedelta(days=1)
     csv_file_path = '/home/data-engineer/GAAS_Data_System/ETL/cache_process/{}'.format(previous_day.strftime('%Y%m%d')) 
-    print(csv_file_path)
     try: 
         df = pd.read_csv(csv_file_path)
         for index in range(0,len(df)):
             greater = int(df['greater'][index])
             less = int(df['less'][index])
             if df['status'][index] != 'success':
-                if df['collection'][index] == 'user':
-                    etl_user_items(greater,less)
-                    df['status'][index] = 'success'
+                if df['collection'][index] == 'users':
+                    try:
+                        etl_user_items(greater,less)
+                        df['status'][index] = 'success'
+                    except OSError as error:
+                        df['status'][index] =  error
+                    except AttributeError as atr_error:
+                        df['status'][index] =  atr_error
                     df.to_csv(csv_file_path, index=False)
-                elif df['collection'][index] == 'event':
-                    etl_event(greater,less)
-                    df['status'][index] = 'success'
+                elif df['collection'][index] == 'events':
+                    try:
+                        etl_event(greater,less)
+                        df['status'][index] = 'success'
+                    except mysql.connector.Error as error:
+                        df['status'][index] =  error
+                    except Exception  as unexpected_error:
+                        df['status'][index] =  unexpected_error          
                     df.to_csv(csv_file_path, index=False)
     except Exception as e:
         logging.error(f"An Error Occur {e}")
+        
 
 
 # _____________________________DAG_______________________________
@@ -146,9 +156,9 @@ def run_backup_etl():
 # Define default arguments for the DAG
 default_args = {
     'owner': 'hungnm',
-    'email': ['hungnm15012002@gmail.com'],
+    'email': ['hungnm15012002@gmail.com',],
     'depends_on_past': False,
-    'start_date': datetime(2023, 8, 26, 2, 0, 0),  # Define the appropriate start date
+    'start_date': datetime(2023, 8, 27, 2, 0, 0),  # Define the appropriate start date
     'retries': 0,
     'email_on_failure': True,
     'email_on_retry': False,

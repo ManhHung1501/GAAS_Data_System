@@ -1,0 +1,22 @@
+[2023-08-27T17:19:06.283+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: gaas_etl_1.etl_user scheduled__2023-08-27T17:18:00+00:00 [queued]>
+[2023-08-27T17:19:06.299+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: gaas_etl_1.etl_user scheduled__2023-08-27T17:18:00+00:00 [queued]>
+[2023-08-27T17:19:06.300+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-08-27T17:19:06.341+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): etl_user> on 2023-08-27 17:18:00+00:00
+[2023-08-27T17:19:06.351+0000] {standard_task_runner.py:57} INFO - Started process 434823 to run task
+[2023-08-27T17:19:06.368+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'gaas_etl_1', 'etl_user', 'scheduled__2023-08-27T17:18:00+00:00', '--job-id', '6707', '--raw', '--subdir', 'DAGS_FOLDER/dag_etl.py', '--cfg-path', '/tmp/tmpgg3ctbdv']
+[2023-08-27T17:19:06.374+0000] {standard_task_runner.py:85} INFO - Job 6707: Subtask etl_user
+[2023-08-27T17:19:07.104+0000] {task_command.py:415} INFO - Running <TaskInstance: gaas_etl_1.etl_user scheduled__2023-08-27T17:18:00+00:00 [running]> on host data-system.us-central1-a.c.data-system-392010.internal
+[2023-08-27T17:19:08.023+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='hungnm15012002@gmail.com' AIRFLOW_CTX_DAG_OWNER='hungnm' AIRFLOW_CTX_DAG_ID='gaas_etl_1' AIRFLOW_CTX_TASK_ID='etl_user' AIRFLOW_CTX_EXECUTION_DATE='2023-08-27T17:18:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-08-27T17:18:00+00:00'
+[2023-08-27T17:19:08.045+0000] {dag_etl.py:28} INFO - Extracting user...
+[2023-08-27T17:19:38.139+0000] {extract.py:50} ERROR - Request Exception Error : HTTPSConnectionPool(host='as1.abiteams.com', port=443): Read timed out. (read timeout=30)
+[2023-08-27T17:19:38.153+0000] {dag_etl.py:31} INFO - Complete extract user: 0:00:30.108090
+[2023-08-27T17:19:38.153+0000] {dag_etl.py:33} INFO - Extracting resource...
+[2023-08-27T17:19:38.461+0000] {extract.py:36} INFO - Request time: 0:00:00.307750
+[2023-08-27T17:19:38.462+0000] {extract.py:45} ERROR - Server GAAS error: 502
+[2023-08-27T17:19:38.467+0000] {dag_etl.py:36} INFO - Complete extract resource: 0:00:00.314231
+[2023-08-27T17:19:38.468+0000] {dag_etl.py:38} INFO - Transforming user...
+[2023-08-27T17:19:38.472+0000] {dag_etl.py:107} ERROR - An Error Occur: 'int' object has no attribute 'merge'
+[2023-08-27T17:19:38.472+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-08-27T17:19:38.486+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=gaas_etl_1, task_id=etl_user, execution_date=20230827T171800, start_date=20230827T171906, end_date=20230827T171938
+[2023-08-27T17:19:38.532+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-08-27T17:19:38.564+0000] {taskinstance.py:2784} INFO - 0 downstream tasks scheduled from follow-on schedule check

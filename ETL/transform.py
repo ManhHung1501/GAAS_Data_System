@@ -4,6 +4,7 @@ import messages
 import pandas as pd
 import json
 import numpy as np
+from datetime import datetime, timedelta
 from verify_func import get_partition_table
 
 # UDF function
@@ -29,6 +30,7 @@ def modify_keys(v_dict):
     return v_dict
 
 # ------------------ TRANSFORM USER ----------------------
+inserted_time = datetime.now() + timedelta(hours=7)
 # Transform event
 def transform_events(event_df, event_type):
     # Return empty df if have no data to transform
@@ -64,15 +66,13 @@ def transform_events(event_df, event_type):
     partition_df['partition_date'] = pd.to_datetime(partition_df['partition_date'])
     value_df['date'] = pd.to_datetime(value_df['date'])
 
-    # Find the nearest partition_date for each date
-    value_df['nearest_partition_date'] = value_df['date'].apply(lambda x: partition_df['partition_date'][partition_df['partition_date'] <= x].max())
-
-    # Handle events earlier than the earliest partition date
+    # Get min partition date and relative partition id
     min_partition_date = partition_df['partition_date'].min()
-    value_df.loc[value_df['date'] < min_partition_date, 'nearest_partition_date'] = min_partition_date
+    id_min_date = partition_df.loc[partition_df['partition_date'] == min_partition_date]['partition_id'].iloc[0]
 
     # Merge the value_df with partition_df to get the corresponding partition_id
-    value_df = value_df.merge(partition_df, how='left', left_on='nearest_partition_date', right_on='partition_date')
+    value_df = value_df.merge(partition_df, how='left', left_on='date', right_on='partition_date')
+    value_df['partition_id'] = value_df['partition_id'].fillna(id_min_date)
 
     # SELECT COLUMNS TO INSERT
     if event_type == "action":
@@ -131,7 +131,10 @@ def transform_users(user_df, resource_df):
     df['piece'] = df['rs'].apply(lambda x: x['23'] if isinstance(x, dict) and '23' in x else 0)
     df['vip_point'] = df['rs'].apply(lambda x: x['285'] if isinstance(x, dict) and '285' in x else 0)
     df['resource'] = df['rs'].apply(lambda x: json.dumps(x) if isinstance(x, dict) else None)
-  
+    
+    # Get inserted time
+    df['inserted_time'] = inserted_time 
+
     df = df.replace({np.nan: None})
 
     df = df[[
@@ -160,7 +163,8 @@ def transform_users(user_df, resource_df):
         'creation_time',
         'creation_date',
         'av',
-        'cv']]
+        'cv',
+        'inserted_time']]
     return df
 
 def transform_items(user_df, item_lst):
@@ -172,7 +176,9 @@ def transform_items(user_df, item_lst):
         sl['power_level'] = sl['sl'].apply(lambda x: x['sp'] if isinstance(x, dict) and 'sp' in x else 0)
         sl['evolve_level'] = sl['sl'].apply(lambda x: x['se'] if isinstance(x, dict) and 'se' in x else 0)
         sl['experience_point'] = sl['sl'].apply(lambda x: x['xp'] if isinstance(x, dict) and 'xp' in x else 0)
-        sl = sl[['u','ship_index','bullet_level','power_level','evolve_level','experience_point','skin_list']]
+        # Get inserted time
+        sl['inserted_time'] = inserted_time 
+        sl = sl[['u','ship_index','bullet_level','power_level','evolve_level','experience_point','skin_list', 'inserted_time']]
         df = sl
 
     elif item_lst == "dl":
@@ -180,21 +186,27 @@ def transform_items(user_df, item_lst):
         dl["drone_index"] = dl.groupby("u").cumcount() + 1
         dl["skin_list"] = dl['dl'].apply(lambda x: list_to_json(x['ss']) if isinstance(x, dict) and 'ss' in x else 0)
         dl['power_level'] = dl['dl'].apply(lambda x: x['sp'] if isinstance(x, dict) and 'sp' in x else 0)
-        dl = dl[['u','drone_index','power_level','skin_list']]
+        # Get inserted time
+        dl['inserted_time'] = inserted_time 
+        dl = dl[['u','drone_index','power_level','skin_list', 'inserted_time']]
         df = dl
         
     elif item_lst == "pl":
         pl = user_df.explode("pl")
         pl['pilot_id'] = pl['pl'].apply(lambda x: x['pi'] if isinstance(x, dict) and 'pi' in x else 0)
         pl['pilot_level'] = pl['pl'].apply(lambda x: x['lv'] if isinstance(x, dict) and 'lv' in x else 0)
-        pl = pl[['u','pilot_id','pilot_level']]
+        # Get inserted time
+        pl['inserted_time'] = inserted_time 
+        pl = pl[['u','pilot_id','pilot_level', 'inserted_time']]
         df = pl
         
     elif item_lst == "tl":
         tl = user_df.explode("tl")
         tl['talent_id'] = tl['tl'].apply(lambda x: x['ti'] if isinstance(x, dict) and 'ti' in x else 0)
         tl['talent_level'] = tl['tl'].apply(lambda x: x['lv'] if isinstance(x, dict) and 'lv' in x else 0)
-        tl = tl[['u','talent_id','talent_level']]
+        # Get inserted time
+        tl['inserted_time'] = inserted_time 
+        tl = tl[['u','talent_id','talent_level', 'inserted_time']]
         df = tl
     elif item_lst == "xl":
         xl = user_df.explode("xl")
@@ -202,7 +214,9 @@ def transform_items(user_df, item_lst):
         xl['expert_item_level'] = xl['xl'].apply(lambda x: x['lv'] if isinstance(x, dict) and 'lv' in x else 0)
         xl['equipping_ship'] = xl['xl'].apply(lambda x: x['sh'] if isinstance(x, dict) and 'sh' in x else 0)
         xl['slot_equipped'] = xl['xl'].apply(lambda x: x['su'] if isinstance(x, dict) and 'su' in x else 0)
-        xl = xl[['u','expert_item_id','expert_item_level','equipping_ship','slot_equipped']]
+        # Get inserted time
+        xl['inserted_time'] = inserted_time
+        xl = xl[['u','expert_item_id','expert_item_level','equipping_ship','slot_equipped', 'inserted_time']]
         df = xl
     else:
         raise ValueError("Invalid item_lst value.")

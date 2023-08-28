@@ -1,0 +1,23 @@
+[2023-08-26T13:46:03.878+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: gaas_etl_1.etl_user scheduled__2023-08-26T13:45:00+00:00 [queued]>
+[2023-08-26T13:46:03.900+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: gaas_etl_1.etl_user scheduled__2023-08-26T13:45:00+00:00 [queued]>
+[2023-08-26T13:46:03.901+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-08-26T13:46:03.943+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): etl_user> on 2023-08-26 13:45:00+00:00
+[2023-08-26T13:46:03.951+0000] {standard_task_runner.py:57} INFO - Started process 314538 to run task
+[2023-08-26T13:46:03.966+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'gaas_etl_1', 'etl_user', 'scheduled__2023-08-26T13:45:00+00:00', '--job-id', '1747', '--raw', '--subdir', 'DAGS_FOLDER/dag_etl.py', '--cfg-path', '/tmp/tmp6r_duolo']
+[2023-08-26T13:46:03.972+0000] {standard_task_runner.py:85} INFO - Job 1747: Subtask etl_user
+[2023-08-26T13:46:04.195+0000] {task_command.py:415} INFO - Running <TaskInstance: gaas_etl_1.etl_user scheduled__2023-08-26T13:45:00+00:00 [running]> on host data-system.us-central1-a.c.data-system-392010.internal
+[2023-08-26T13:46:04.450+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='hungnm15012002@gmail.com' AIRFLOW_CTX_DAG_OWNER='hungnm' AIRFLOW_CTX_DAG_ID='gaas_etl_1' AIRFLOW_CTX_TASK_ID='etl_user' AIRFLOW_CTX_EXECUTION_DATE='2023-08-26T13:45:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-08-26T13:45:00+00:00'
+[2023-08-26T13:46:04.480+0000] {dag_etl.py:28} INFO - Extracting user...
+[2023-08-26T13:46:04.796+0000] {extract.py:36} INFO - Request time: 0:00:00.314370
+[2023-08-26T13:46:04.796+0000] {extract.py:45} ERROR - Server GAAS error: 502
+[2023-08-26T13:46:04.810+0000] {dag_etl.py:31} INFO - Complete extract user: 0:00:00.330013
+[2023-08-26T13:46:04.811+0000] {dag_etl.py:33} INFO - Extracting resource...
+[2023-08-26T13:46:05.093+0000] {extract.py:36} INFO - Request time: 0:00:00.281535
+[2023-08-26T13:46:05.093+0000] {extract.py:45} ERROR - Server GAAS error: 502
+[2023-08-26T13:46:05.099+0000] {dag_etl.py:36} INFO - Complete extract resource: 0:00:00.288881
+[2023-08-26T13:46:05.100+0000] {dag_etl.py:38} INFO - Transforming user...
+[2023-08-26T13:46:05.104+0000] {dag_etl.py:107} ERROR - An Error Occur: 'int' object has no attribute 'merge'
+[2023-08-26T13:46:05.105+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-08-26T13:46:05.118+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=gaas_etl_1, task_id=etl_user, execution_date=20230826T134500, start_date=20230826T134603, end_date=20230826T134605
+[2023-08-26T13:46:05.179+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-08-26T13:46:05.204+0000] {taskinstance.py:2784} INFO - 0 downstream tasks scheduled from follow-on schedule check

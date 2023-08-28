@@ -1,0 +1,26 @@
+[2023-08-27T16:11:07.662+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: gaas_etl_1.etl_event scheduled__2023-08-27T16:10:00+00:00 [queued]>
+[2023-08-27T16:11:07.688+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: gaas_etl_1.etl_event scheduled__2023-08-27T16:10:00+00:00 [queued]>
+[2023-08-27T16:11:07.689+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-08-27T16:11:07.735+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): etl_event> on 2023-08-27 16:10:00+00:00
+[2023-08-27T16:11:07.750+0000] {standard_task_runner.py:57} INFO - Started process 427624 to run task
+[2023-08-27T16:11:07.772+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'gaas_etl_1', 'etl_event', 'scheduled__2023-08-27T16:10:00+00:00', '--job-id', '6503', '--raw', '--subdir', 'DAGS_FOLDER/dag_etl.py', '--cfg-path', '/tmp/tmp5lxdpa2_']
+[2023-08-27T16:11:07.784+0000] {standard_task_runner.py:85} INFO - Job 6503: Subtask etl_event
+[2023-08-27T16:11:08.736+0000] {task_command.py:415} INFO - Running <TaskInstance: gaas_etl_1.etl_event scheduled__2023-08-27T16:10:00+00:00 [running]> on host data-system.us-central1-a.c.data-system-392010.internal
+[2023-08-27T16:11:09.433+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='hungnm15012002@gmail.com' AIRFLOW_CTX_DAG_OWNER='hungnm' AIRFLOW_CTX_DAG_ID='gaas_etl_1' AIRFLOW_CTX_TASK_ID='etl_event' AIRFLOW_CTX_EXECUTION_DATE='2023-08-27T16:10:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-08-27T16:10:00+00:00'
+[2023-08-27T16:11:09.453+0000] {dag_etl.py:116} INFO - Extracting event...
+[2023-08-27T16:11:20.826+0000] {extract.py:36} INFO - Request time: 0:00:11.372440
+[2023-08-27T16:11:20.831+0000] {extract.py:42} INFO - Create DataFrame time: 0:00:00.004584
+[2023-08-27T16:11:20.833+0000] {dag_etl.py:119} INFO - Complete extract event: 0:00:11.379730
+[2023-08-27T16:11:20.833+0000] {dag_etl.py:121} INFO - Transforming action...
+[2023-08-27T16:11:20.834+0000] {dag_etl.py:124} INFO - Complete transform action: 0:00:00.001514
+[2023-08-27T16:11:20.834+0000] {dag_etl.py:126} INFO - Transforming transaction...
+[2023-08-27T16:11:20.835+0000] {dag_etl.py:129} INFO - Complete transform transaction: 0:00:00.000910
+[2023-08-27T16:11:20.835+0000] {dag_etl.py:131} INFO - Loading action...
+[2023-08-27T16:11:20.836+0000] {dag_etl.py:134} INFO - Complete load action: 0:00:00.000661
+[2023-08-27T16:11:20.836+0000] {dag_etl.py:136} INFO - Loading transaction...
+[2023-08-27T16:11:20.836+0000] {dag_etl.py:139} INFO - Complete load transaction: 0:00:00.000474
+[2023-08-27T16:11:20.837+0000] {dag_etl.py:141} INFO - Complete ETL Events in : 0:00:11.383503
+[2023-08-27T16:11:20.837+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-08-27T16:11:20.849+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=gaas_etl_1, task_id=etl_event, execution_date=20230827T161000, start_date=20230827T161107, end_date=20230827T161120
+[2023-08-27T16:11:20.898+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-08-27T16:11:20.917+0000] {taskinstance.py:2784} INFO - 0 downstream tasks scheduled from follow-on schedule check

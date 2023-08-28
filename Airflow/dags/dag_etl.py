@@ -13,7 +13,7 @@ from ETL.load import load
 def get_process_time():
     greater_time = get_last_processed_timestamp()
     if greater_time == None:
-        greater_time = 1692982800000
+        greater_time = 1693021620000
     less_than_time = greater_time + 60000
     update_last_processed_timestamp(less_than_time)
     return greater_time,less_than_time
@@ -103,7 +103,7 @@ def etl_user_items(**kwargs):
         logging.error(f"Error while load to MySQL: {error}")
     
     except Exception as error:
-        cache_process(greater, less, "events")
+        cache_process(greater, less, "users")
         logging.error(f"An Error Occur: {error}")
 
 def etl_event(**kwargs):
@@ -154,9 +154,9 @@ def etl_event(**kwargs):
 # Define default arguments for the DAG
 default_args = {
     'owner': 'hungnm',
-    'email': ['hungnm15012002@gmail.com'],
+    'email': ['hungnm15012002@gmail.com',],
     'depends_on_past': False,
-    'start_date': datetime(2023, 8, 25, 17, 40, 0),  # Define the appropriate start date
+    'start_date': datetime(2023, 8, 26, 4, 17, 0),  # Define the appropriate start date
     'retries': 0,
     'email_on_failure': True,
     'email_on_retry': False,
@@ -166,7 +166,7 @@ default_args = {
 
 # Create the DAG
 dag = DAG(
-    'gaas_etl',
+    'gaas_etl_1',
     description='An ETL Dag to get data from GAAS Server to MySQL',
     default_args=default_args, 
     schedule_interval=timedelta(minutes=1)
